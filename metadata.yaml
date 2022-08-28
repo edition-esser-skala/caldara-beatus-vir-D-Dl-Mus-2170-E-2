@@ -1,0 +1,42 @@
+composer:
+  last: Caldara
+  first: Antonio
+title: Beatus vir
+genre: psalm
+scoring: S, A (solo), S, A, T, B (coro), 2 ob, 2 vl, vla, b, org
+license: cc-by-sa-4.0
+sources:
+  B1:
+    siglum: D-Dl
+    shelfmark: Mus.2170-E-2
+    date: 1725–1733
+    rism: 212006723
+    url: https://digital.slub-dresden.de/id426604393
+    license: public domain
+    principal: true
+    notes: full score
+  B2:
+    siglum: D-Dl
+    shelfmark: Mus.2170-E-2
+    date: 1725–1733
+    rism: 212006724
+    url: https://digital.slub-dresden.de/id426602943
+    license: public domain
+    notes: contains the following parts (assigned to groups a (1) and b (2)
+      according to grouping in the RISM entry; pages in digital version
+      are indicated):\\
+      1 × ob 1 (a, 75–78)\\
+      1 × ob 2 (a, 79–82)\\
+      3 × vl 1 (a, 27–30, 31–34; b, 87–90)\\
+      3 × vl 2 (a, 35–38, 39–42; b, 91–94)\\
+      2 × vla (a, 43–45; b, 95–97)\\
+      2 × S (a, 5–8 solo, 15f ripieno)\\
+      2 × A (a, 9–13 solo, 17f ripieno)\\
+      2 × T (a, 19f and 21f)\\
+      2 × B (a, 23f and 25f)\\
+      1 × vlc (a, 47–53)\\
+      2 × vlne (a, 55–58; b, 99–102)\\
+      2 × fag (a, 83–86; b, 103–106)\\
+      1 × theorbe (a, 59–65)\\
+      1 × org (a, 67–74)
+imslp:
