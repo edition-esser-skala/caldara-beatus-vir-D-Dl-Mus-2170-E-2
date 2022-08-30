@@ -21,7 +21,7 @@ BeatusTenore = {
     r2 r4 d
     e8 e d4 d r %80
     R1*4
-    R1\fermata \bar "||" %85 finis
+    R1\fermata \bar "|." %85 finis
   }
 }
 

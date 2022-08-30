@@ -73,6 +73,6 @@ BeatusViolinoII = {
     h h4 c8 a a4 h8
     g g4 a8 fis fis4 g8
     g4-! fis-! g~ g16 a h c
-    a4 d h2\fermata \bar "||" %85 finis
+    a4 d h2\fermata \bar "|." %85 finis
   }
 }

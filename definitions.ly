@@ -11,6 +11,7 @@ vlne = \markup \remark "vlne"
 
 
 tempoBeatus = \tempoMarkup "Allegro"
+tempoGloriaEt = \tempoMarkup "[Tempo deest]"
 
 
 \include "notes/ob1.ly"

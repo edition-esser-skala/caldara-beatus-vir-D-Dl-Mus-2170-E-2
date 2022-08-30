@@ -54,7 +54,7 @@ BeatusAltoSolo = {
     h16[ c a h] g4~ g16[ h a c] h4~
     h8[ a16 g] fis4 g r
     R1*5 %84
-    R1\fermata \bar "||" %85 finis
+    R1\fermata \bar "|." %85 finis
   }
 }
 

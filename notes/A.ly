@@ -21,7 +21,7 @@ BeatusAlto = {
     r2 r4 g
     g8 g fis4 g r %80
     R1*4
-    R1\fermata \bar "||" %85 finis
+    R1\fermata \bar "|." %85 finis
   }
 }
 

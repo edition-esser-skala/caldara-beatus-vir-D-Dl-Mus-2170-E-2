@@ -21,7 +21,7 @@ BeatusSoprano = {
     r2 r4 h
     a8 a a4 h r %80
     R1*4
-    R1\fermata \bar "||" %85 finis
+    R1\fermata \bar "|." %85 finis
   }
 }
 

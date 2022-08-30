@@ -53,6 +53,6 @@ BeatusOboeI = {
     d d4 e8 c c4 d8
     h h4 c8 a a4 d8
     h4-! a-! g8 d' g4~
-    g fis g2\fermata \bar "||" %85 finis
+    g fis g2\fermata \bar "|." %85 finis
   }
 }

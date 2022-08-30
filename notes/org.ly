@@ -88,7 +88,7 @@ BeatusOrgano = {
     g h g e f a f d
     e g e c d d4 h8^\critnote
     d4 d^\critnote h4. g8
-    d'4 d, g2\fermata \bar "||" %85 finis
+    d'4 d, g2\fermata \bar "|." %85 finis
   }
 }
 
@@ -178,4 +178,185 @@ BeatusBassFigures = \figuremode {
   r4. <6>8 <[_+]>2
   <6 4>4 <5 3> <6>2
   <5 4>4 <\t _+>2. %85 finis
+}
+
+GloriaEtOrgano = {
+  \relative c {
+    \clef bass
+    \key c \major \time 3/4 \tempoGloriaEt
+    \mvTr c2\pE-\solo-\vlcorg c'4~
+    c h2
+    c4 c, c'~
+    c h2
+    c4 c,2 %5
+    c'4 h a
+    g2.~
+    g~
+    g\fermata
+    \mvTr g8\fE-\bassi h g h g h %10
+    e, c' h c e, c'
+    f, a f a f a
+    d, h' a h d, h'
+    e, g e g e g
+    c, a' g a c, a' %15
+    h, g' f g h, g'
+    e4 r8 r16 g c4
+    f, g g,
+    << {
+      \mvTr c2^\pE^\vlcorg c'4~
+      \oneVoice c h2 %20
+    } \\ {
+      c,4_\bassi r r
+      s2. %20
+    } >>
+    c'4 c,2^\critnote
+    c'4 h2
+    c4 c,2
+    c'4 h a
+    g2.~ %25
+    g
+    g8 h g h g h
+    e, c' h c e, c'
+    f, a f a f a
+    fis d' c d fis, d' %30
+    g,2 r4
+    gis8 e' d e gis, e'
+    a,2.
+    d,
+    e2 e'4 %35
+    c4. h8 a4
+    d,8 d' c d f, d'
+    e, gis e gis e gis
+    a, a' gis a a, a'
+    gis h gis h e, gis %40
+    a4 e e,
+    \mvTr a'4.\fE-\bassi h8 c4
+    d h2
+    c4. d8 e4
+    f d2 %45
+    e4. d8 c4~
+    \mvTr c\pE-\vlcorg h2
+    c4 c, c'~
+    c h2
+    c4 c, c' %50
+    a f fis
+    g2 g,4
+    g'8 h g h g h
+    e, c' h c e, c'
+    f, a f a f a %55
+    d, h' a h d, h'
+    e, g e g e g
+    c, a' g a c, a'
+    h, g' f g h, g'
+    c, a' g a c, a' %60
+    h, g' f g h, g'
+    c,4 r c'
+    h4 r h
+    c r a
+    g8 h g h g h %65
+    c, a' g4 g,
+    \mvTr c'8\fE-\bassi e c e c e
+    h g' f g h, g'
+    c, e c e c e
+    f,4 r \mvTr fis\pE-\vlcorg %70
+    g r r
+    g r r
+    g r8 g c g
+    a f g4 g,
+    \mvTr c'8\fE-\bassi e c e c e %75
+    a, f' e f a, f'
+    g, h g h g h
+    e, c' h c e, c'
+    f, a f a f a
+    d, h' a h d, h' %80
+    c,4 r8 r16 g' c4
+    f, g g,
+    c2.\fermata \bar "|." %83 finis
+  }
+}
+
+GloriaEtBassFigures = \figuremode {
+  r2.
+  <4 2>4 <6>2
+  r2.
+  <2>4 <6>2
+  r2. %5
+  r4 <6> <6\\>
+  r2.
+  r
+  r
+  r %10
+  <6>
+  <5>
+  <6>
+  <5>
+  <6> %15
+  q
+  q
+  r
+  r
+  <2>4 <6>2 %20
+  r2.
+  <4 2>4 <6>2
+  r2.
+  r4 <6> <6\\>
+  r2. %25
+  r
+  r
+  <6>
+  <5>
+  <6> %30
+  r
+  <6>
+  r
+  <[_!]>
+  <_+> %35
+  <6>4. <6\\>
+  r2 <6>4
+  <7 _+>2.
+  r
+  <6> %40
+  r4 <4> <_+>
+  r4. <6\\>8 <6>4
+  r <6!> <5>
+  r4. <[6]>8 <6>4
+  r <5> <6> %45
+  <6>2.
+  <2>4 <6>2
+  r2.
+  <2>4 <6>2
+  r2. %50
+  r2 <7>4
+  <5>2.
+  <6>
+  q
+  <5> %55
+  <6>
+  <5>
+  <6>
+  q
+  q %60
+  q
+  r
+  <6>2 <\t>4
+  r2 <6\\>4
+  r2. %65
+  r4 <4> <3>
+  r2.
+  <6>
+  <5>
+  r2 <6>4 %70
+  r2.
+  r
+  r
+  <5 3>4 q2
+  r2. %75
+  <6>
+  <5>
+  <6>
+  <5>
+  <6> %80
+  r
+  <6 5>
+  r %83 finis
 }

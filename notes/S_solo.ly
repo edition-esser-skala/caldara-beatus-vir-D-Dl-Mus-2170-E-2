@@ -58,7 +58,7 @@ BeatusSopranoSolo = {
     d16[ e c d] h4~ h16[ d c e] d4~
     d8[ c16 h] a4 g r
     R1*5 %84
-    R1\fermata \bar "||" %85 finis
+    R1\fermata \bar "|." %85 finis
   }
 }
 
@@ -117,8 +117,148 @@ BeatusSopranoSoloLyrics = \lyricmode {
   _ tur. %79 finis
 }
 
-% Glo -- ri -- a et di -- vi -- ti -- ae in do -- mo e -- ius:
-% Et iu -- sti -- ti -- a e -- ius ma -- net in sae -- cu -- lum sae -- cu -- li.
+GloriaEtSopranoSolo = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \autoBeamOff \tempoGloriaEt
+    \mvTr c'4.\pE^\solo d8 e4
+    f d2
+    e4. d8 c4
+    f d2
+    e4. d8 c4 %5
+    e d c
+    d8[ g fis e d c]
+    h[ e d c h a]
+    g4. fis8 g4\fermata
+    R2.*9 %18
+    c4. d8 e4
+    f d2 %20
+    e4. d8 c4
+    f d2
+    e4. d8 c4
+    e d c
+    d8[ g fis e d c] %25
+    h[ e d c h a]
+    g2 g4
+    r c e
+    a,4. a8 a4
+    d d2 %30
+    h8[ d c h c d]
+    e2.~
+    e8[ f e d e c]
+    f[ e d c h a]
+    gis4. fis?8 e4 %35
+    r r a'
+    f!4. e8 d4
+    d4. h8[ e d]
+    c[ d e f e f]
+    e4. d8[ e h] %40
+    c[ a] h4. a8
+    a2 r4
+    R2.*3 %45
+    c4. d8 e4
+    f d2
+    e4. d8 c4
+    f d2
+    e4. d8 c4 %50
+    e f e
+    d4.( c8) d4
+    r g h,
+    c g' g,
+    a a2 %55
+    f'8[ e f d e f]
+    g4 g,2
+    r4 r c
+    d4. c8 d4
+    e c e %60
+    d g d
+    e8[ g f g e f]
+    d[ g f g d e]
+    c[ g' f g c, d]
+    h4. g'8[ f g] %65
+    e[ c] \appoggiatura e d4.\trill c8
+    c2 r4
+    R2.
+    r4 r g'
+    a f d %70
+    h8 g4 a8[ h c]
+    d h4 c8[ d e]
+    f4.d8[ e h]
+    c[ a] h4. c8
+    c2 r4 %75
+    R2.*7 %82
+    R2.\fermata \bar "||" %83 finis
+  }
+}
+
+GloriaEtSopranoSoloLyrics = \lyricmode {
+  Glo -- ri -- a
+  et di --
+  vi -- ti -- ae,
+  et di --
+  vi -- ti -- ae %5
+  in do -- mo
+  e --
+  _ _ _ ius.
+
+  Glo -- ri -- a %19
+  et di -- %20
+  vi -- ti -- ae,
+  et di --
+  vi -- ti -- ae
+  in do -- mo
+  e -- %25
+  _
+  _ ius,
+  et iu --
+  sti -- ti -- a
+  e -- ius %30
+  ma --
+  _
+
+  _
+  _ _ net %35
+  in
+  sae -- cu -- lum
+  sae -- _
+  _
+  _ _ %40
+  _ _ cu --
+  li.
+
+  Glo -- ri -- a %46
+  et di --
+  vi -- ti -- ae,
+  et di --
+  vi -- ti -- ae %50
+  in do -- mo
+  e -- ius,
+  et iu --
+  sti -- ti -- a
+  e -- ius %55
+  ma --
+  _ net
+  in
+  sae -- cu -- lum
+  sae -- _ _ %60
+  _ _ _
+  _
+  _
+  _
+  _ _ %65
+  _ _ cu --
+  li,
+
+  in
+  sae -- cu -- lum %70
+  sae -- _ _
+  _ _ _
+  _ _
+  _ _ cu --
+  li. %75 finis
+}
+
+
 % Ex -- or -- tum est in te -- ne -- bris lu -- men re -- ctis:
 % Mi -- se -- ri -- cors et mi -- se -- ra -- tor et iu -- stus.
 % Iu -- cun -- dus ho -- mo qui mi -- se -- re -- tur et com -- mo -- dat,
