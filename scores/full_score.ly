@@ -5,8 +5,8 @@
 
 \book {
   \bookpart {
-    \section "Beatus vir"
-    % \addTocEntry
+    \section "1" "Beatus vir"
+    \addTocEntry
     \paper { indent = 3\cm }
     \score {
       <<
@@ -41,6 +41,7 @@
           }
         >>
         \new ChoirStaff <<
+          \set ChoirStaff.instrumentName = \markup { \rotate #90 "S O L O" \hspace #10 }
           \new Staff {
             \incipitSoprano
             \new Voice = "SopranoSolo" { \dynamicUp \BeatusSopranoSolo }
@@ -54,6 +55,7 @@
           \new Lyrics \lyricsto AltoSolo \BeatusAltoSoloLyrics
         >>
         \new ChoirStaff <<
+          \set ChoirStaff.instrumentName = \markup { \rotate #90 "C O R O" \hspace #10 }
           \new Staff {
             \incipitSoprano
             \new Voice = "Soprano" { \dynamicUp \BeatusSoprano }
@@ -88,7 +90,7 @@
         \new FiguredBass { \BeatusBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 90 }
+      \midi { \tempo 4 = 110 }
     }
   }
 }

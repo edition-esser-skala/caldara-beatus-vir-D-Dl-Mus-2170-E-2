@@ -1,9 +1,13 @@
 \version "2.22.0"
 
-#(define option-movement-title-format "title")
+#(define option-movement-title-format "number-title")
 #(define option-init-toc #t)
 #(define option-print-all-bar-numbers #t)
 \include "ees.ly"
+
+
+vlcorg = \markup \remark "vlc, org"
+vlne = \markup \remark "vlne"
 
 
 tempoBeatus = \tempoMarkup "Allegro"
