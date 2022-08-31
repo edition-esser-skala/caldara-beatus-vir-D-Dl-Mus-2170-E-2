@@ -92,3 +92,20 @@ GloriaEtViola = {
     c2.\fermata \bar "|." %83 finis
   }
 }
+
+ExortumViola = {
+  \relative c' {
+    \clef alto
+    \key g \major \time 4/4 \tempoExortum
+    r4 d\fE d4. d8
+    d2 r4 d
+    d2. d4
+    e2 e4 e
+    e1 %5
+    d\fermata
+    r4 d d4. d8
+    c2 r8 e e e
+    d4 d8 d d2
+    d1\fermata \bar "|." %10 finis
+  }
+}

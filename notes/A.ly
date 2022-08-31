@@ -42,3 +42,33 @@ BeatusAltoLyrics = \lyricmode {
   be -- %79
   ne -- di -- ce -- tur. %80 finis
 }
+
+ExortumAlto = {
+  \relative c' {
+    \clef treble
+    \key g \major \time 4/4 \autoBeamOff \tempoExortum
+    r4 \mvTr g'\fE^\tutti g4. g8
+    g2 r4 g
+    g2. g4
+    gis2 gis4 gis
+    g1 %5
+    fis\fermata
+    r4 fis f4. f8
+    e2 r8 a a a
+    fis!4 g4. g8 fis4
+    g1\fermata \bar "|." %10 finis
+  }
+}
+
+ExortumAltoLyrics = \lyricmode {
+  Ex -- or -- tum %1
+  est in
+  te -- ne --
+  bris lu -- men
+  re -- %5
+  ctis:
+  Mi -- se -- ri --
+  cors et mi -- se --
+  ra -- tor et iu --
+  stus. %10 finis
+}

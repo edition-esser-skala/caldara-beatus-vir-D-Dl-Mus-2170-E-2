@@ -42,3 +42,33 @@ BeatusTenoreLyrics = \lyricmode {
   be -- %79
   ne -- di -- ce -- tur. %80 finis
 }
+
+ExortumTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \major \time 4/4 \autoBeamOff \tempoExortum
+    r4 \mvTr d\fE^\tutti d4. d8
+    d2 r4 d
+    d2. d4
+    e2 e4 e
+    e1 %5
+    d\fermata
+    r4 d d4. d8
+    c2 r8 e e e
+    d4 d8 d d2
+    d1\fermata \bar "|." %10 finis
+  }
+}
+
+ExortumTenoreLyrics = \lyricmode {
+  Ex -- or -- tum %1
+  est in
+  te -- ne --
+  bris lu -- men
+  re -- %5
+  ctis:
+  Mi -- se -- ri --
+  cors et mi -- se --
+  ra -- tor et iu --
+  stus. %10 finis
+}

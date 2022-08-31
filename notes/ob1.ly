@@ -56,3 +56,20 @@ BeatusOboeI = {
     g fis g2\fermata \bar "|." %85 finis
   }
 }
+
+ExortumOboeI = {
+  \relative c' {
+    \clef treble
+    \key g \major \time 4/4 \tempoExortum
+    r4 h'\fE h4. h8
+    h2 r4 h
+    h2. h4
+    h2. h4
+    e1 %5
+    fis\fermata
+    r4 fis f4. f8
+    e2 r8 c c c
+    c h16 a h8 a16 g a4. a8
+    g1\fermata \bar "|." %10 finis
+  }
+}

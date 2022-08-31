@@ -360,3 +360,33 @@ GloriaEtBassFigures = \figuremode {
   <6 5>
   r %83 finis
 }
+
+ExortumOrgano = {
+  \relative c {
+    \clef bass
+    \key g \major \time 4/4 \tempoExortum
+    r4 \mvTr g\fE-\tutti g2
+    g r4 g'
+    f1
+    e
+    cis %5
+    d\fermata
+    r4 d h2
+    c r8 c c c
+    d4 g, d'2 \noBreak
+    g,1\fermata \bar "|." %10 finis
+  }
+}
+
+ExortumBassFigures = \figuremode {
+  r1
+  r
+  <6 4 2>
+  <5 _+>
+  <6 5!> %5
+  r
+  r2 <6 5!>
+  <5 3> r8 <6>4.
+  <7 _+>2 <5 4>4 <\t 3>
+  r1 %10 finis
+}

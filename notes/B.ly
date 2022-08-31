@@ -42,3 +42,33 @@ BeatusBassoLyrics = \lyricmode {
   be -- %79
   ne -- di -- ce -- tur. %80 finis
 }
+
+ExortumBasso = {
+  \relative c {
+    \clef bass
+    \key g \major \time 4/4 \autoBeamOff \tempoExortum
+    r4 \mvTr g'\fE^\tutti g4. g8
+    g2 r4 g
+    f2. f4
+    e2 e4 e
+    cis1 %5
+    d\fermata
+    r4 d h4. h8
+    c2 r8 c c c
+    d4 g,8 g d'2
+    g,1\fermata \bar "|." %10 finis
+  }
+}
+
+ExortumBassoLyrics = \lyricmode {
+  Ex -- or -- tum %1
+  est in
+  te -- ne --
+  bris lu -- men
+  re -- %5
+  ctis:
+  Mi -- se -- ri --
+  cors et mi -- se --
+  ra -- tor et iu --
+  stus. %10 finis
+}

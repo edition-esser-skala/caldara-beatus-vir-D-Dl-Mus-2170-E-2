@@ -93,40 +93,113 @@
   %     \midi { \tempo 4 = 110 }
   %   }
   % }
+  % \bookpart {
+  %   \section "2" "Gloria et divitiæ"
+  %   \addTocEntry
+  %   \paper {
+  %     system-system-spacing.basic-distance = #20
+  %     system-system-spacing.minimum-distance = #20
+  %     systems-per-page = #4
+  %   }
+  %   \score {
+  %     <<
+  %       \new StaffGroup \with { \smallGroupDistance } <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "vla"
+  %           \GloriaEtViola
+  %         }
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "SopranoSolo" { \dynamicUp \GloriaEtSopranoSolo }
+  %         }
+  %         \new Lyrics \lyricsto SopranoSolo \GloriaEtSopranoSoloLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \GloriaEtOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \GloriaEtBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 2. = 60 }
+  %   }
+  % }
   \bookpart {
-    \section "2" "Gloria et divitiæ"
+    \section "3" "Exortum est"
     \addTocEntry
-    \paper {
-      system-system-spacing.basic-distance = #20
-      system-system-spacing.minimum-distance = #20
-      systems-per-page = #4
-    }
     \score {
       <<
-        \new StaffGroup \with { \smallGroupDistance } <<
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "ob"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \ExortumOboeI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \ExortumOboeII
+            }
+          >>
+        >>
+        \new StaffGroup <<
+          \new GrandStaff \with { \smallGroupDistance } <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \ExortumViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \ExortumViolinoII
+            }
+          >>
           \new Staff {
             \set Staff.instrumentName = "vla"
-            \GloriaEtViola
+            \ExortumViola
           }
         >>
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "SopranoSolo" { \dynamicUp \GloriaEtSopranoSolo }
+            \new Voice = "Soprano" { \dynamicUp \ExortumSoprano }
           }
-          \new Lyrics \lyricsto SopranoSolo \GloriaEtSopranoSoloLyrics
+          \new Lyrics \lyricsto Soprano \ExortumSopranoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \ExortumAlto }
+          }
+          \new Lyrics \lyricsto Alto \ExortumAltoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "T"
+            \new Voice = "Tenore" { \dynamicUp \ExortumTenore }
+          }
+          \new Lyrics \lyricsto Tenore \ExortumTenoreLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "B"
+            \new Voice = "Basso" { \dynamicUp \ExortumBasso }
+          }
+          \new Lyrics \lyricsto Basso \ExortumBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \GloriaEtOrgano
+            \ExortumOrgano
           }
         >>
-        \new FiguredBass { \GloriaEtBassFigures }
+        \new FiguredBass { \ExortumBassFigures }
       >>
       \layout { }
-      \midi { \tempo 2. = 60 }
+      \midi { \tempo 4 = 60 }
     }
   }
 }

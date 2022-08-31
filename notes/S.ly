@@ -42,3 +42,33 @@ BeatusSopranoLyrics = \lyricmode {
   be -- %79
   ne -- di -- ce -- tur. %80 finis
 }
+
+ExortumSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \major \time 4/4 \autoBeamOff \tempoExortum
+    r4 \mvTr h'4\fE^\tutti h4. h8
+    h2 r4 h
+    h2. h4
+    h2 h4 h
+    a1 %5
+    a\fermata
+    r4 a g4. g8
+    g g g g c2~
+    c4 h8 h a2
+    h1\fermata \bar "|." %10
+  }
+}
+
+ExortumSopranoLyrics = \lyricmode {
+  Ex -- or -- tum %1
+  est in
+  te -- ne --
+  bris lu -- men
+  re -- %5
+  ctis:
+  Mi -- se -- ri --
+  cors et mi -- se -- ra --
+  tor et iu --
+  stus. %10 finis
+}
