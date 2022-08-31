@@ -162,3 +162,27 @@ IucundusOboeIeII = {
     d,4 r\fermata \bar "|." %141 finis
   }
 }
+
+ParatumOboeI = {
+  \relative c' {
+    \clef treble
+    \key g \major \time 3/2 \tempoParatum
+    R1.*2
+    r2 r d'\fE
+    e d2. c4
+    h a g2 r %5
+    R1.
+    r2 r d'\fE
+    d cis2. cis4
+    d cis d2 r
+    R1.*3 %12
+    r2 r a\fE
+    h h a
+    g2. fis4 g a %15
+    fis a d2 r
+    R1.*11 %27
+    h4\fE cis d e8 fis g4 h,~
+    h2 h ais
+    h1.\fermata \bar "|." %30 finis
+  }
+}

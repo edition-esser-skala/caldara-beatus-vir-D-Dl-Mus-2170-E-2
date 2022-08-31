@@ -76,3 +76,27 @@ ExortumOboeII = {
     g1\fermata \bar "|." %10 finis
   }
 }
+
+ParatumOboeII = {
+  \relative c' {
+    \clef treble
+    \key g \major \time 3/2 \tempoParatum
+    R1.*2
+    r2 r g''~\fE
+    g fis2. fis4
+    g fis g2 r %5
+    R1.
+    r2 r g\fE
+    e e e
+    d4 e fis2 r
+    R1.*3 %12
+    r2 r d\fE
+    d d d~
+    d cis2. cis4 %15
+    d a d,2 r
+    R1.*11 %27
+    h'4\fE cis d e8 fis g4 h,~
+    h2 h ais
+    h1.\fermata \bar "|." %30 finis
+  }
+}

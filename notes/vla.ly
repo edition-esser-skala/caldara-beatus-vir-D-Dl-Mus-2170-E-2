@@ -109,3 +109,27 @@ ExortumViola = {
     d1\fermata \bar "|." %10 finis
   }
 }
+
+ParatumViola = {
+  \relative c' {
+    \clef alto
+    \key g \major \time 3/2 \tempoParatum
+    R1.*2
+    r2 r g'\fE
+    c, d2. d4
+    g2 g, r %5
+    R1.
+    r2 r g'\fE
+    a a2. g4
+    fis e d2 r
+    R1.*3 %12
+    r2 r d\fE
+    g g fis
+    e1. %15
+    d1 r2
+    R1.*11 %27
+    h'4\fE a! g fis e d
+    e h fis'2 fis,
+    h1.\fermata \bar "|." %30 finis
+  }
+}

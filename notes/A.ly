@@ -72,3 +72,46 @@ ExortumAltoLyrics = \lyricmode {
   ra -- tor et iu --
   stus. %10 finis
 }
+
+ParatumAlto = {
+  \relative c' {
+    \clef treble
+    \key g \major \time 3/2 \autoBeamOff \tempoParatum
+    R1.*2
+    r2 r g'\fE
+    g fis2. fis4
+    g2 d r %5
+    R1.
+    r2 r h'
+    a a2. a4
+    a2 a r
+    R1.*3 %12
+    r2 r fis
+    g g d~
+    d cis2. cis4 %15
+    d1.
+    R1.*11 %27
+    h4 cis d d e fis
+    e d cis1
+    dis1.\fermata \bar "|." %30 finis
+  }
+}
+
+ParatumAltoLyrics = \lyricmode {
+  Pa -- %3
+  ra -- tum cor
+  e -- ius %5
+
+  spe --
+  ra -- re, spe --
+  ra -- re,
+
+  spe -- %13
+  ra -- re in __
+  Do -- mi -- %15
+  no,
+
+  in -- i -- mi -- cos, in -- i -- %28
+  mi -- cos su --
+  os. %30 finis
+}

@@ -72,3 +72,46 @@ ExortumSopranoLyrics = \lyricmode {
   tor et iu --
   stus. %10 finis
 }
+
+ParatumSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \major \time 3/2 \autoBeamOff \tempoParatum
+    R1.*2
+    r2 r d'\fE
+    e d2. c4
+    h( a) g2 r %5
+    R1.
+    r2 r d'
+    d cis2. cis4
+    d( cis) d2 r
+    R1.*3 %12
+    r2 r a
+    h h a
+    g1 g2 %15
+    fis1.
+    R1.*11 %27
+    d'4 cis h a g fis
+    g fis fis1
+    fis1.\fermata \bar "|." %30 finis
+  }
+}
+
+ParatumSopranoLyrics = \lyricmode {
+  Pa -- %3
+  ra -- tum cor
+  e -- ius %5
+
+  spe --
+  ra -- re, spe --
+  ra -- re,
+
+  spe -- %13
+  ra -- re in
+  Do -- mi -- %15
+  no,
+
+  in -- i -- mi -- cos, in -- i -- %28
+  mi -- cos su --
+  os. %30 finis
+}

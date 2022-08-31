@@ -258,10 +258,64 @@ GloriaEtSopranoSoloLyrics = \lyricmode {
   li. %75 finis
 }
 
+ParatumSopranoSolo = {
+  \relative c' {
+    \clef treble
+    \key g \major \time 3/2 \autoBeamOff \tempoParatum
+    r2 r d'\pE
+    e d2. c4
+    h4.( a8) g2 r
+    R1.*5 %8
+    r2 r a
+    h4. a8 h4. c8 h4. c8 %10
+    a4 g a2 d~
+    d cis2. cis4
+    d1 r2
+    R1.*2 %15
+    r2 d4 e fis d
+    h1 d2
+    cis4. h8 cis4. d8 cis4. h8
+    ais4. gis8 fis2 r
+    fis' d h %20
+    e2. e4 e2
+    e e e
+    e2. d4 d2
+    R1.
+    fis4 e d cis h ais %25
+    h1 h2~
+    h4 cis ais1
+    h1.
+    R
+    R\fermata \bar "|." %30 finis
+  }
+}
 
-% Pa -- ra -- tum cor e -- ius spe -- ra -- re in Do -- mi -- no,
-% con -- fir -- ma -- tum est cor e -- ius:
-% non com -- mo -- ve -- bi -- tur do -- nec de -- spi -- ci -- at in -- i -- mi -- cos su -- os.
+ParatumSopranoSoloLyrics = \lyricmode {
+  Pa --
+  ra -- tum cor
+  e -- ius
+
+  spe -- %9
+  ra -- _ _ _ _ _ %10
+  _ _ re in __
+  Do -- mi --
+  no,
+
+  con -- fir -- ma -- tum %16
+  est cor
+  e -- _ _ _ _ _
+  _ _ ius:
+  non com -- mo -- %20
+  ve -- bi -- tur
+  do -- nec de --
+  spi -- ci -- at
+
+  in -- i -- mi -- cos, in -- i -- %25
+  mi -- cos __
+  _ su --
+  os. %28 finis
+}
+
 % Dis -- per -- sit de -- dit pau -- pe -- ri -- bus:
 % Iu -- sti -- ti -- a e -- ius ma -- net in sae -- cu -- lum sae -- cu -- li:
 % Cor -- nu e -- ius ex -- al -- ta -- bi -- tur in glo -- ri -- a.

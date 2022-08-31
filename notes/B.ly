@@ -72,3 +72,46 @@ ExortumBassoLyrics = \lyricmode {
   ra -- tor et iu --
   stus. %10 finis
 }
+
+ParatumBasso = {
+  \relative c {
+    \clef bass
+    \key g \major \time 3/2 \autoBeamOff \tempoParatum
+    R1.*2
+    r2 r g'\fE
+    c, d2. d4
+    g2 g, r %5
+    R1.
+    r2 r g'
+    a a2. g4
+    fis( e) d2 r
+    R1.*3 %12
+    r2 r d
+    g g fis
+    e1 e2 %15
+    d1.
+    R1.*11 %27
+    h'4 a! g fis e d
+    e h fis'1
+    h,1.\fermata \bar "|." %30 finis
+  }
+}
+
+ParatumBassoLyrics = \lyricmode {
+  Pa -- %3
+  ra -- tum cor
+  e -- ius %5
+
+  spe --
+  ra -- re, spe --
+  ra -- re,
+
+  spe -- %13
+  ra -- re in
+  Do -- mi -- %15
+  no,
+
+  in -- i -- mi -- cos, in -- i -- %28
+  mi -- cos su --
+  os. %30 finis
+}

@@ -202,46 +202,134 @@
   %     \midi { \tempo 4 = 60 }
   %   }
   % }
+  % \bookpart {
+  %   \section "4" "Iucundus homo"
+  %   \addTocEntry
+  %   \paper {
+  %     system-system-spacing.basic-distance = #22
+  %     system-system-spacing.minimum-distance = #22
+  %     systems-per-page = #3
+  %   }
+  %   \score {
+  %     <<
+  %       \new StaffGroup \with { \smallGroupDistance } <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "ob" "1, 2" }
+  %           \IucundusOboeIeII
+  %         }
+  %       >>
+  %       \new StaffGroup \with { \smallGroupDistance } <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "vl" "1, 2" }
+  %           \IucundusViolinoIeII
+  %         }
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "AltoSolo" { \dynamicUp \IucundusAltoSolo }
+  %         }
+  %         \new Lyrics \lyricsto AltoSolo \IucundusAltoSoloLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \IucundusOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \IucundusBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 100 }
+  %   }
+  % }
   \bookpart {
-    \section "4" "Iucundus homo"
+    \section "5" "Paratum cor"
     \addTocEntry
-    \paper {
-      system-system-spacing.basic-distance = #22
-      system-system-spacing.minimum-distance = #22
-      systems-per-page = #3
-    }
     \score {
       <<
-        \new StaffGroup \with { \smallGroupDistance } <<
-          \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "ob" "1, 2" }
-            \IucundusOboeIeII
-          }
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "ob"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \ParatumOboeI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \ParatumOboeII
+            }
+          >>
         >>
-        \new StaffGroup \with { \smallGroupDistance } <<
+        \new StaffGroup <<
+          \new GrandStaff \with { \smallGroupDistance } <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \ParatumViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \ParatumViolinoII
+            }
+          >>
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "vl" "1, 2" }
-            \IucundusViolinoIeII
+            \set Staff.instrumentName = "vla"
+            \ParatumViola
           }
         >>
         \new ChoirStaff <<
+          \set ChoirStaff.instrumentName = \markup { \rotate #90 "Solo" }
+          \new Staff {
+            \set Staff.instrumentName = "S"
+            \new Voice = "SopranoSolo" { \dynamicUp \ParatumSopranoSolo }
+          }
+          \new Lyrics \lyricsto SopranoSolo \ParatumSopranoSoloLyrics
+
           \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "AltoSolo" { \dynamicUp \IucundusAltoSolo }
+            \new Voice = "AltoSolo" { \dynamicUp \ParatumAltoSolo }
           }
-          \new Lyrics \lyricsto AltoSolo \IucundusAltoSoloLyrics
+          \new Lyrics \lyricsto AltoSolo \ParatumAltoSoloLyrics
+        >>
+        \new ChoirStaff <<
+          \set ChoirStaff.instrumentName = \markup { \rotate #90 "Coro" }
+          \new Staff {
+            \set Staff.instrumentName = "S"
+            \new Voice = "Soprano" { \dynamicUp \ParatumSoprano }
+          }
+          \new Lyrics \lyricsto Soprano \ParatumSopranoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \ParatumAlto }
+          }
+          \new Lyrics \lyricsto Alto \ParatumAltoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "T"
+            \new Voice = "Tenore" { \dynamicUp \ParatumTenore }
+          }
+          \new Lyrics \lyricsto Tenore \ParatumTenoreLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "B"
+            \new Voice = "Basso" { \dynamicUp \ParatumBasso }
+          }
+          \new Lyrics \lyricsto Basso \ParatumBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \IucundusOrgano
+            \ParatumOrgano
           }
         >>
-        \new FiguredBass { \IucundusBassFigures }
+        \new FiguredBass { \ParatumBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 100 }
+      \midi { \tempo 2 = 120 }
     }
   }
 }

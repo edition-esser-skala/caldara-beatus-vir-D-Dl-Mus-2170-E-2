@@ -72,3 +72,46 @@ ExortumTenoreLyrics = \lyricmode {
   ra -- tor et iu --
   stus. %10 finis
 }
+
+ParatumTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \major \time 3/2 \autoBeamOff \tempoParatum
+    R1.*2
+    r2 r h\fE
+    c a d
+    d4( c) h2 r %5
+    R1.
+    r2 r g'
+    e e2. e4
+    d( e) fis2 r
+    R1.*3 %12
+    r2 r d
+    d d a
+    h( e) e %15
+    a,1.
+    R1.*11 %27
+    fis'4 fis h, h h h
+    h h h2( ais)
+    h1.\fermata \bar "|." %30 finis
+  }
+}
+
+ParatumTenoreLyrics = \lyricmode {
+  Pa -- %3
+  ra -- tum cor
+  e -- ius %5
+
+  spe --
+  ra -- re, spe --
+  ra -- re,
+
+  spe -- %13
+  ra -- re in
+  Do -- mi -- %15
+  no,
+
+  in -- i -- mi -- cos, in -- i -- %28
+  mi -- cos su --
+  os. %30 finis
+}

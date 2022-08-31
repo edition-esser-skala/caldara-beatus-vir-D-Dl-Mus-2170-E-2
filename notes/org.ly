@@ -682,3 +682,73 @@ IucundusBassFigures = \figuremode {
   <7> <3> %140
   r2 %141 finis
 }
+
+ParatumOrgano = {
+  \relative c {
+    \clef bass
+    \key g \major \time 3/2 \tempoParatum
+    \mvTr g1\pE-\solo-\vlcorg h2
+    c d1
+    g, \mvTr g'2\fE-\tutti-\bassi
+    c, d1
+    g, \mvTr g'2\pE-\solo-\vlcorg %5
+    cis,1.
+    d1 \mvTr g2\fE-\tutti-\bassi
+    a a, a'4 g
+    fis e d2 \mvTr d\pE-\solo-\vlcorg
+    g1. %10
+    d1 fis2
+    e1 a,2
+    d1 \mvTr d2\fE-\tutti-\bassi
+    g g fis
+    e1. %15
+    d
+    \mvTr g1\pE-\solo-\vlcorg d2
+    e1.
+    fis
+    h, %20
+    g'
+    fis
+    h,
+    fis'
+    fis %25
+    g
+    cis,2 fis fis,
+    \mvTr h'4\fE-\tutti-\bassi a! g fis e d
+    e h fis'2 fis,
+    h1.\fermata \bar "|." %30 finis
+  }
+}
+
+ParatumBassFigures = \figuremode {
+  r1 <6>2
+  r <4> <3>
+  r1.
+  r2 <5>1
+  r1. %5
+  <6>
+  r
+  <4>2 <_+>1
+  <6>4 <6\\> r1
+  r1. %10
+  r1 <6>2
+  <7> <6\\> <[7 _+]>
+  r1.
+  r1 <6>2
+  <7> <6\\>1 %15
+  r1.
+  r
+  <6\\>
+  <[5+] _+>
+  r1 <\t>2 %20
+  <6>1.
+  <7 [5+] _+>
+  <5 4>1 <\t 3>2
+  <5+ 4>2 <\t _+>1
+  <[5+] _+>1. %25
+  <5>
+  <7>2 <[5+] _+>1
+  r2 <5> q
+  r \bo <[5+] 4> <\t _+>
+  \bc <[_+]>1. %30 finis
+}

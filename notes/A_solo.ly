@@ -301,3 +301,60 @@ IucundusAltoSoloLyrics = \lyricmode {
   me -- %120
   bit. %121 finis
 }
+
+ParatumAltoSolo = {
+  \relative c' {
+    \clef treble
+    \key g \major \time 3/2 \autoBeamOff \tempoParatum
+    R1.*4
+    r2 r h'\pE %5
+    a a2. g4
+    fis( e) d2 r
+    R1.
+    r2 r fis
+    g4. fis8 g4. a8 g4. a8 %10
+    fis4 e fis2 a
+    g1 g2
+    fis1 r2
+    R1.*3 %16
+    r2 g4 a h g
+    e1 g2
+    fis4. e8 fis4. g8 fis4. e8
+    d4. cis8 h2 r %20
+    h' g e
+    ais2. ais4 ais2
+    h h h
+    h2. ais4 ais2
+    R1. %25
+    h4 a! g fis e d
+    e4. g8 cis,1
+    h1.
+    R
+    R\fermata \bar "|." %30
+  }
+}
+
+ParatumAltoSoloLyrics = \lyricmode {
+  Spe -- %5
+  ra -- re, spe --
+  ra -- re,
+
+  spe --
+  ra -- _ _ _ _ _ %10
+  _ _ re in
+  Do -- mi --
+  no,
+
+  con -- fir -- ma -- tum %17
+  est cor
+  e -- _ _ _ _ _
+  _ _ ius: %20
+  non com -- mo --
+  ve -- bi -- tur
+  do -- nec de --
+  spi -- ci -- at
+  %25
+  in -- i -- mi -- cos, in -- i --
+  mi -- cos su --
+  os. %28 finis
+}
