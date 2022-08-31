@@ -390,3 +390,295 @@ ExortumBassFigures = \figuremode {
   <7 _+>2 <5 4>4 <\t 3>
   r1 %10 finis
 }
+
+IucundusOrgano = {
+  \relative c {
+    \clef bass
+    \twofourtime \key d \major \time 2/4 \tempoIucundus
+    \mvTr d4\fE-\solo-\bassi r8 e
+    fis g r gis
+    a a h cis
+    d cis h a
+    g4 fis %5
+    e d
+    a'8 h cis a
+    h a h cis
+    d cis d h
+    cis h cis a %10
+    h a h g
+    a4 r
+    a r
+    a8 a, h cis
+    d4 cis8 d %15
+    h cis d e
+    fis d a' a,
+    d4 r8 \mvTr e\p-\vlcorg
+    fis g r gis
+    a a, h cis %20
+    d cis h a
+    g4 fis8 fis'
+    e4 d
+    a r8 \mvTr a'\f-\bassi
+    h a h cis %25
+    d cis d h
+    cis h cis a
+    h a h g
+    a fis g a
+    fis d h cis %30
+    d4 r8 e
+    fis h g a
+    d,4 r8 \mvTr e\p-\vlcorg
+    fis g r gis
+    a a, h cis %35
+    d cis h a
+    g4 fis
+    e d
+    a' r
+    a8 h cis a %40
+    h4. cis8
+    d4 dis
+    e r8 \mvTr e\f-\bassi
+    fis e fis gis
+    a4 \mvTr a,\p-\vlcorg %45
+    e' r8 e
+    a4 a,
+    e' r
+    e r
+    a, r %50
+    h cis
+    d8 cis d h
+    cis4 d
+    e e,
+    a r8 \mvTr h\f-\bassi %55
+    cis a h cis
+    d4 r8 d
+    e cis d e
+    cis4^\critnote r8 \mvTr cis\p-\vlcorg
+    d4 ais %60
+    h r8 h
+    e4 r8 e
+    d4 cis
+    h8 e d cis16 h
+    fis'4 << { fis, } \\ { r8-\bassi fis\f } >> %65
+    h cis d h
+    cis4 dis
+    e e,
+    << { \mvTr e'8^\p^\vlcorg fis g e } \\ { e4_\bassi } >>
+    a8 h c g %70
+    a h g e
+    c2
+    << { h^\vlcorg } \\ { r4-\bassi h\f } >>
+    cis! dis
+    e8 fis g4 %75
+    a8 h c g
+    a h g a
+    e4 a,8 h
+    << { e,^\vlcorg e'16^\p fis g8 e } \\ { e,4_\bassi r } >>
+    a8 h c g %80
+    a h g e
+    c'2
+    h4 r
+    h r8 h
+    e4 r8^\critnote c %85
+    d8 d e c
+    d4 g
+    e fis
+    g g,
+    d'2 %90
+    e4. c8
+    d2
+    g,4 r8 g'
+    a4 g
+    fis e %95
+    d r8 d
+    e4 r8 e
+    fis4 r8 fis
+    g4 a
+    h r8 g %100
+    e fis g g,
+    c4 d
+    g8\f g e fis
+    g4 fis8 g
+    a2\p %105
+    d,4 e
+    fis g
+    a a,
+    a'\f r
+    a8 a h cis %110
+    d d, cis d
+    h cis d e
+    fis4 e8\p d
+    g2
+    d %115
+    h4 cis
+    d2
+    a'
+    d,8 g fis e16 d
+    a'4 a, %120
+    \mvTr d\f-\bassi r8 e
+    fis g r gis
+    a a h cis
+    d cis h a
+    g4 fis %125
+    e d
+    a'8 h cis a
+    h a h cis
+    d cis d h
+    cis h cis a %130
+    h a h g
+    a a fis g
+    a4 a,
+    d8 e fis d\p
+    h a h cis %135
+    d cis d h
+    cis h cis a
+    h a h gis
+    a4 fis
+    g\fE a %140
+    d, r\fermata \bar "|." %141 finis
+  }
+}
+
+IucundusBassFigures = \figuremode {
+  r4. <6>8
+  q4. <5>8
+  r4 <7>8 <5>
+  r <[6]> <6> q
+  r4 q %5
+  q2
+  r4 q8 q
+  q4. \once \bassFigureExtendersOn q8
+  r4. <5>8
+  <6>2 %10
+  q
+  r
+  <6 [4]>
+  <5 [3]>4 <6>8 q
+  r4 q %15
+  q8 q4 q8
+  q2
+  r4. <6>8
+  q <5>4 q8
+  r4 <7>8 <5> %20
+  r <6> q q
+  r4 <6>
+  q2
+  r
+  <6>4. \once \bassFigureExtendersOn q8 %25
+  r4. <5>8
+  <7>4 <6>
+  <7> <6>
+  r8 <6> <5>4
+  <6>4 q8 <\t> %30
+  r4. <[6]>8
+  <6>4 <[6]>
+  r4. <6>8
+  q4. <5>8
+  r4 <7>8 <5> %35
+  r <[6]> <6> q
+  r4 q
+  q2
+  r
+  r %40
+  <7>8 <6>4 <[6]>8
+  r4 <6>
+  <_+>2
+  <6>4. \once \bassFigureExtendersOn q8
+  r2 %45
+  <4>8 <_+>4 <\t>8
+  r2
+  <_+>
+  q
+  r %50
+  <6!>4 <\t>
+  r2
+  <6>4 <6>8 <5>
+  <_+>2
+  r4. <6\\>8 %55
+  <6>4 <6\\>8 <6>
+  r2
+  <_+>8 <6> q <_+>
+  <6>4. <\t>8
+  r4 <6> %60
+  r2
+  <_!>
+  <6>4 <6\\>
+  r <6>
+  <6 4> <5 _+> %65
+  r <6>
+  <6!> <\t>
+  <_!>2
+  r
+  <6! _!>8 <[5+] _+>4 <6>8 %70
+  <6! [_+]> <[5+] _+> <6>4
+  q2
+  <_+>
+  <6>4 <\t>
+  r <6> %75
+  <6! [_!]>8 <[5+] _+>4 <6>8
+  <6! [_!]> <[5+] _+> <6> <_!>
+  r4 <_!>8 <_+>
+  r4 <6>
+  <6! [_!]>8 <[5+] _+>4 <6>8 %80
+  <6! [_!]> <[5+] _+> <6>4
+  q2
+  <_+>
+  q
+  r %85
+  r4. <6>8
+  <_+>2
+  <6! 5>4 <[6 5!]>
+  <9> <8>
+  <4> <3> %90
+  <9> <8>8 <3>
+  <9>4 <8>
+  r2
+  <6 _!>
+  <6>4 <6\\> %95
+  r2
+  <6>
+  q
+  r4 <6 _!>
+  <6>2 %100
+  <6!>8 <\t>4.
+  <6>2
+  r4 <6!>8 <\t>
+  r4 <6>
+  <_+>2 %105
+  r4 <6>
+  q2
+  r
+  r
+  r4 <[6]> %110
+  r <6>
+  q8 q4 q8
+  q4 q
+  <9> <8>
+  <4> <3> %115
+  <6 5> <5>
+  <9> <8>
+  <4> <3>
+  r <6>
+  <6 4> <5 3> %120
+  r4. <6>8
+  q4. \bo <[5]>8
+  r4 <7>8 \bc <[5]>
+  r <6> q q
+  r4 q %125
+  q2
+  r4. <6>8
+  <6>4. \once \bassFigureExtendersOn q8
+  r2
+  <6> %130
+  q
+  r4 q
+  <6 4> <5 3>
+  r2
+  <6>4. \once \bassFigureExtendersOn q8 %135
+  r2
+  <6>
+  q
+  r4 q
+  <7> <3> %140
+  r2 %141 finis
+}

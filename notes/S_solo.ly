@@ -259,12 +259,6 @@ GloriaEtSopranoSoloLyrics = \lyricmode {
 }
 
 
-
-% Iu -- cun -- dus ho -- mo qui mi -- se -- re -- tur et com -- mo -- dat,
-% dis -- po -- net ser -- mo -- nes su -- os in iu -- di -- ci -- o:
-% Qui -- a in ae -- ter -- num non com -- mo -- ve -- bi -- tur.
-% In me -- mo -- ri -- a ae -- ter -- na e -- rit iu -- stus:
-% Ab au -- di -- ti -- o -- ne ma -- la non ti -- me -- bit.
 % Pa -- ra -- tum cor e -- ius spe -- ra -- re in Do -- mi -- no,
 % con -- fir -- ma -- tum est cor e -- ius:
 % non com -- mo -- ve -- bi -- tur do -- nec de -- spi -- ci -- at in -- i -- mi -- cos su -- os.

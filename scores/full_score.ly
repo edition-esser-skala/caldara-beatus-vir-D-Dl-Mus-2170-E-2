@@ -129,77 +129,119 @@
   %     \midi { \tempo 2. = 60 }
   %   }
   % }
+  % \bookpart {
+  %   \section "3" "Exortum est"
+  %   \addTocEntry
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "ob"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \ExortumOboeI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \ExortumOboeII
+  %           }
+  %         >>
+  %       >>
+  %       \new StaffGroup <<
+  %         \new GrandStaff \with { \smallGroupDistance } <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \ExortumViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \ExortumViolinoII
+  %           }
+  %         >>
+  %         \new Staff {
+  %           \set Staff.instrumentName = "vla"
+  %           \ExortumViola
+  %         }
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \ExortumSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \ExortumSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \ExortumAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \ExortumAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \ExortumTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \ExortumTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \ExortumBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \ExortumBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \ExortumOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \ExortumBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 60 }
+  %   }
+  % }
   \bookpart {
-    \section "3" "Exortum est"
+    \section "4" "Iucundus homo"
     \addTocEntry
+    \paper {
+      system-system-spacing.basic-distance = #22
+      system-system-spacing.minimum-distance = #22
+      systems-per-page = #3
+    }
     \score {
       <<
-        \new StaffGroup <<
-          \new GrandStaff <<
-            \set GrandStaff.instrumentName = "ob"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \ExortumOboeI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \ExortumOboeII
-            }
-          >>
-        >>
-        \new StaffGroup <<
-          \new GrandStaff \with { \smallGroupDistance } <<
-            \set GrandStaff.instrumentName = "vl"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \ExortumViolinoI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \ExortumViolinoII
-            }
-          >>
+        \new StaffGroup \with { \smallGroupDistance } <<
           \new Staff {
-            \set Staff.instrumentName = "vla"
-            \ExortumViola
+            \set Staff.instrumentName = \markup \center-column { "ob" "1, 2" }
+            \IucundusOboeIeII
+          }
+        >>
+        \new StaffGroup \with { \smallGroupDistance } <<
+          \new Staff {
+            \set Staff.instrumentName = \markup \center-column { "vl" "1, 2" }
+            \IucundusViolinoIeII
           }
         >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \ExortumSoprano }
-          }
-          \new Lyrics \lyricsto Soprano \ExortumSopranoLyrics
-
-          \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \ExortumAlto }
+            \new Voice = "AltoSolo" { \dynamicUp \IucundusAltoSolo }
           }
-          \new Lyrics \lyricsto Alto \ExortumAltoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \ExortumTenore }
-          }
-          \new Lyrics \lyricsto Tenore \ExortumTenoreLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \ExortumBasso }
-          }
-          \new Lyrics \lyricsto Basso \ExortumBassoLyrics
+          \new Lyrics \lyricsto AltoSolo \IucundusAltoSoloLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \ExortumOrgano
+            \IucundusOrgano
           }
         >>
-        \new FiguredBass { \ExortumBassFigures }
+        \new FiguredBass { \IucundusBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 60 }
+      \midi { \tempo 4 = 100 }
     }
   }
 }

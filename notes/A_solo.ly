@@ -108,3 +108,196 @@ BeatusAltoSoloLyrics = \lyricmode {
   _ _
   _ tur. %79 finis
 }
+
+IucundusAltoSolo = {
+  \relative c' {
+    \clef treble
+    \key d \major \time 2/4 \autoBeamOff \tempoIucundus
+    R2*17 %17
+    r8 \mvTr a'\pE^\solo fis g
+    a h4 d,8
+    cis a'4 g8 %20
+    fis([ e)] g([ fis)]
+    h([ a16 g)] a8 d,
+    cis4 d8.([\trillE cis32 d])
+    e2
+    R2*8 %32
+    r8 a fis g
+    a h4 d,8
+    cis a'4 g8 %35
+    fis([ e)] g([ fis)]
+    h([ a16 g)] a8 d,
+    cis4 d8.([\trill cis32 d)]
+    e4 r
+    r8 e a4~ %40
+    a8 g16 fis g8 e
+    fis d h' a
+    gis8. fis16 e4
+    R2
+    r4 a~ %45
+    a8 gis gis a16([ h)]
+    cis8 a16 h cis8 h16([ a)]
+    h8 e,4 gis8
+    h d,4 e8
+    cis[ a cis e] %50
+    g!-! g4 fis16[ e]
+    fis8-! fis4 e16[ d]
+    e8[ cis' h a]
+    gis4. a8
+    a2 %55
+    R2*3
+    a8 g! fis e
+    fis fis16 g fis8 e %60
+    d fis4 e16[ d]
+    e8 g4 fis16[ e]
+    fis[ gis ais h] cis8[ e,]
+    d[ g fis h]
+    d,4 cis8. h16 %65
+    h2
+    R2*2
+    h'4 e,
+    f8 dis e g %70
+    f([ dis)] e4
+    a8([ g)] fis([ e)]
+    h'4 h,
+    R2*5 %78
+    h'4 e,
+    f8 dis e g %80
+    f([ dis)] e4
+    a8([ g)] fis([ e)]
+    h'4 h,
+    h'8 a g fis
+    g4 c %85
+    a8 g16([ fis)] g8 a
+    d,4 h'~
+    h8[ a16 g] a8[-! a]~
+    a[ g16 fis] g8[-! g]~
+    g[ fis16 e] fis8[-! fis]~ %90
+    fis[ e16 d] e8[-! e]~
+    e[ d16 c] d8[ c]
+    h[ g' a h]
+    c16[ h c a] h[ a h g]^\critnote
+    a[ g a fis] g[ fis g e] %95
+    fis[ e fis d] e[ g fis a]
+    g[ fis g e] fis[ a g h]
+    a[ g a fis] g[ h a c]
+    h[ a h g] c[ h c a]
+    d8 d, g4 %100
+    r8 c h a16([ g)]
+    a2
+    g
+    R
+    a8 g fis e %105
+    fis4 g
+    a8 g16([ a)] h8 g
+    e4 e
+    R2
+    a4 r %110
+    a r
+    R2
+    r8 a g fis
+    h-! h4 a16[ g]
+    a8-! a4 g16[ fis] %115
+    g8-! g4 fis16[ e]
+    fis8-! fis4 e16[ d]
+    e8[ fis16 g] a[ h g a]
+    fis8 h a d
+    fis,4( e) %120
+    d2
+    R2*19 %130
+    R2\fermata \bar "|." %131 finis
+  }
+}
+
+IucundusAltoSoloLyrics = \lyricmode {
+  Iu -- cun -- dus %18
+  ho -- mo, iu --
+  cun -- dus, qui %20
+  mi -- se --
+  re -- tur et
+  com -- mo --
+  dat,
+
+  iu -- cun -- dus %33
+  ho -- mo, iu --
+  cun -- dus, qui %35
+  mi -- se --
+  re -- tur et
+  com -- mo --
+  dat,
+  dis -- po -- %40
+  net ser -- mo -- nes
+  su -- os in iu --
+  di -- ci -- o:
+
+  Qui -- %45
+  a in ae --
+  ter -- num non com -- mo --
+  ve -- _ _
+  _ _ _
+  _ %50
+  _ _ _
+  _ _ _
+  _
+  _ bi --
+  tur, %55
+
+  qui -- a in ae -- %59
+  ter -- num non com -- mo -- %60
+  ve -- _ _
+  _ _ _
+  _ _
+  _
+  _ _ bi -- %65
+  tur.
+
+  In me -- %69
+  mo -- ri -- a ae -- %70
+  ter -- na
+  e -- rit
+  iu -- stus,
+
+  in me -- %79
+  mo -- ri -- a ae -- %80
+  ter -- na
+  e -- rit
+  iu -- stus:
+  Ab au -- di -- ti --
+  o -- ne %85
+  ma -- la non ti --
+  me -- _
+  _
+  _
+  _ %90
+  _
+  _
+  _
+  _ _
+  _ _ %95
+  _ _
+  _ _
+  _ _
+  _ _
+  _ bit, non, %100
+  non, non ti --
+  me --
+  bit,
+
+  ab au -- di -- ti -- %105
+  o -- ne
+  ma -- la non ti --
+  me -- bit,
+
+  non, %110
+  non,
+
+  non, non ti --
+  me -- _ _
+  _ _ _ %115
+  _ _ _
+  _ _ _
+  _ _
+  bit, non, non ti --
+  me -- %120
+  bit. %121 finis
+}

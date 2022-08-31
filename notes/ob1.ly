@@ -73,3 +73,92 @@ ExortumOboeI = {
     g1\fermata \bar "|." %10 finis
   }
 }
+
+IucundusOboeIeII = {
+  \relative c' {
+    \clef treble
+    \twofourtime \key d \major \time 2/4 \tempoIucundus
+    r8 a''\fE fis g
+    a h4 d,8
+    cis a'4 g8
+    fis( e g fis)
+    h a16 g a8 d, %5
+    cis4 d8.(\trill cis32 d)
+    e4 r8 fis
+    g-! g4 fis16 e
+    fis8-! fis4 e16 d
+    e8-! e4 d16 cis %10
+    d8-! d4 cis16 h
+    cis a( h a) h g cis a
+    d a( h a) cis a d h
+    e a,( h a) d h e cis
+    fis a,( h a) e' cis fis d %15
+    g a,( h a) fis' d g e
+    a a, d fis, e4\trill
+    d r
+    R2*5 %23
+    r4 r8 e'16\fE fis
+    g8-! g4 fis16 e %25
+    fis8-! fis4 e16 d
+    e8-! e4 d16 cis
+    d8-! d4 cis16 h
+    cis a( h a) h g cis a
+    d a( h a) d h e cis %30
+    fis a,( h a) fis' d g e
+    a d cis d e,8 cis'
+    d,4 r
+    R2*5 %38
+    r16 a(\fE h a) cis a d h
+    e4 r %40
+    R2*2
+    r4 r8 h16\fE cis
+    d8-! d4 cis16 h
+    cis8-! cis4 h16 a %45
+    h4 r
+    R2*8 %54
+    r16 a(\fE h a) cis a d h %55
+    e a,( h a) d h e cis
+    fis a,( h a) e' cis fis d
+    gis a,( h a) fis' d gis e
+    a4 r
+    R2*5 %64
+    r4-\critnote r16 fis\f gis ais %65
+    h8-! h4 a16 g
+    a8-! a4 g16 fis
+    g h, e dis e h g h
+    e,4 r
+    R2*3 %72
+    h''8-!\fE h4 a16 g
+    a8-! a4 g16 fis
+    g8-! g4 f16 e %75
+    f8 dis e g
+    f dis e16 h c a
+    h8 a16 g a8 fis
+    e4 r
+    R2*29 %108
+    r16 a(\fE h a) cis a d h
+    e4 r %110
+    R2
+    r16 a,( h a) fis' d g e
+    a4 r
+    R2*7 %120
+    r8 a\fE fis g
+    a h4 d,8
+    cis a'4 g8
+    fis( e g fis)
+    h a16 g a8 d, %125
+    cis4 d8.(\trill cis32 d)
+    e4 r8 e16 fis
+    g8-! g4 fis16 e
+    fis8-! fis4 e16 d
+    e8-! e4 d16 cis %130
+    d8-! d4 cis16 h
+    cis8 a d d,
+    fis4 e
+    d r
+    R2*4 %138
+    r4 r16 d'\f cis d
+    fis,8 d' e, cis' %140
+    d,4 r\fermata \bar "|." %141 finis
+  }
+}
