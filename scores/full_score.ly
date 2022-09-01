@@ -477,40 +477,128 @@
   %     \midi { \tempo 1. = 50 }
   %   }
   % }
+  % \bookpart {
+  %   \section "8" "Gloria Patri"
+  %   \addTocEntry
+  %   \paper {
+  %     system-system-spacing.basic-distance = #20
+  %     system-system-spacing.minimum-distance = #20
+  %     systems-per-page = #4
+  %   }
+  %   \score {
+  %     <<
+  %       \new StaffGroup \with { \smallGroupDistance } <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "vla"
+  %           \GloriaPatriViola
+  %         }
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "AltoSolo" { \dynamicUp \GloriaPatriAltoSolo }
+  %         }
+  %         \new Lyrics \lyricsto AltoSolo \GloriaPatriAltoSoloLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \GloriaPatriOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \GloriaPatriBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 100 }
+  %   }
+  % }
   \bookpart {
-    \section "8" "Gloria Patri"
+    \section "9" "Amen"
     \addTocEntry
-    \paper {
-      system-system-spacing.basic-distance = #20
-      system-system-spacing.minimum-distance = #20
-      systems-per-page = #4
-    }
     \score {
       <<
-        \new StaffGroup \with { \smallGroupDistance } <<
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "ob"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \AmenOboeI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \AmenOboeII
+            }
+          >>
+        >>
+        \new StaffGroup <<
+          \new GrandStaff \with { \smallGroupDistance } <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \AmenViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \AmenViolinoII
+            }
+          >>
           \new Staff {
             \set Staff.instrumentName = "vla"
-            \GloriaPatriViola
+            \AmenViola
           }
         >>
         \new ChoirStaff <<
+          \set ChoirStaff.instrumentName = \markup { \rotate #90 "Solo" }
+          \new Staff {
+            \set Staff.instrumentName = "S"
+            \new Voice = "SopranoSolo" { \dynamicUp \AmenSopranoSolo }
+          }
+          \new Lyrics \lyricsto SopranoSolo \AmenSopranoSoloLyrics
+
           \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "AltoSolo" { \dynamicUp \GloriaPatriAltoSolo }
+            \new Voice = "AltoSolo" { \dynamicUp \AmenAltoSolo }
           }
-          \new Lyrics \lyricsto AltoSolo \GloriaPatriAltoSoloLyrics
+          \new Lyrics \lyricsto AltoSolo \AmenAltoSoloLyrics
+        >>
+        \new ChoirStaff <<
+          \set ChoirStaff.instrumentName = \markup { \rotate #90 "Coro" }
+          \new Staff {
+            \set Staff.instrumentName = "S"
+            \new Voice = "Soprano" { \dynamicUp \AmenSoprano }
+          }
+          \new Lyrics \lyricsto Soprano \AmenSopranoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \AmenAlto }
+          }
+          \new Lyrics \lyricsto Alto \AmenAltoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "T"
+            \new Voice = "Tenore" { \dynamicUp \AmenTenore }
+          }
+          \new Lyrics \lyricsto Tenore \AmenTenoreLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "B"
+            \new Voice = "Basso" { \dynamicUp \AmenBasso }
+          }
+          \new Lyrics \lyricsto Basso \AmenBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \GloriaPatriOrgano
+            \AmenOrgano
           }
         >>
-        \new FiguredBass { \GloriaPatriBassFigures }
+        \new FiguredBass { \AmenBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 100 }
+      \midi { \tempo 2 = 110 }
     }
   }
 }

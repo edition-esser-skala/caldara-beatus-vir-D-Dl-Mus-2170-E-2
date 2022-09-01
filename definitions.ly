@@ -20,6 +20,7 @@ tempoPeccator = \tempoMarkup "Largo"
   tempoEtIrascetur = \tempoMarkup "Allegro"
   tempoDesiderium = \tempoMarkup "Andante"
 tempoGloriaPatri = \tempoMarkup "Larghetto"
+tempoAmen = \tempoMarkup "[Tempo deest]"
 
 
 \include "notes/ob1.ly"

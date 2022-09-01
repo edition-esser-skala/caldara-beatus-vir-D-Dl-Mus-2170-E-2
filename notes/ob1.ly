@@ -242,3 +242,34 @@ PeccatorOboeI = {
     R1.\fermata \bar "|." %22 finis
   }
 }
+
+AmenOboeI = {
+  \relative c' {
+    \clef treble
+    \key g \major \time 2/1 \tempoAmen
+      \set Staff.timeSignatureFraction = 2/2
+    R\breve*9 %9
+    r2 a''4\fE a g g e2 %10
+    fis1 r
+    R\breve*3
+    r2 g4\fE g fis fis fis2 %15
+    e1 r
+    R\breve*3
+    r1 r2 fis4\fE fis %20
+    g g fis2^\critnote fis r
+    R\breve
+    r2 a4\fE a a a gis2
+    a r r1
+    r1 r2 g4\fE g %25
+    g g fis2 g r
+    r1 r2 g4\fE g
+    a a g2 g r
+    R\breve*8 %36
+    g2\fE g r1
+    g2 g r1
+    a2 a r1
+    R\breve*4 %43
+    r2 g1\fE fis2
+    \time 2/2 g1\fermata \bar "|." %45 finis
+  }
+}

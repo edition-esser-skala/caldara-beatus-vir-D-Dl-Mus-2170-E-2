@@ -166,3 +166,59 @@ PeccatorTenoreLyrics = \lyricmode {
   i -- bit, per -- %20
   i -- bit. %21 finis
 }
+
+AmenTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \major \time 2/1 \autoBeamOff \tempoAmen
+      \set Staff.timeSignatureFraction = 2/2
+    R\breve*9 %9
+    r2 d4\fE d d d cis2 %10
+    d1 r
+    R\breve*3
+    r2 e4 e e e dis2 %15
+    e1 r
+    R\breve*3
+    r1 r2 d4 d %20
+    cis cis cis2 dis r
+    R\breve
+    r2 e4 e f f e2
+    e r r1
+    r r2 d4 d %25
+    e e d2 d r
+    r1 r2 e(
+    d1) e2 r
+    R\breve*8 %36
+    c2 c r1
+    d2 d r1
+    fis2 fis r1
+    R\breve*4 %43
+    r2 d4 d e e d2
+    \time 2/2 d1\fermata \bar "|." %45 finis
+  }
+}
+
+AmenTenoreLyrics = \lyricmode {
+  A -- men, a -- men, a -- %10
+  men,
+
+  a -- men, a -- men, a -- %15
+  men,
+
+  a -- men, %20
+  a -- men, a -- men,
+
+  a -- men, a -- men, a --
+  men,
+  a -- men, %25
+  a -- men, a -- men,
+  a --
+  men,
+
+  a -- men, %37
+  a -- men,
+  a -- men,
+
+  a -- men, a -- men, a -- %44
+  men. %45 finis
+}

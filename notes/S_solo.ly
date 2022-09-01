@@ -380,3 +380,91 @@ DispersitSopranoSoloLyrics = \lyricmode {
   _ _ _ _ bi -- tur in
   glo -- ri -- a. %32 finis
 }
+
+AmenSopranoSolo = {
+  \relative c' {
+    \clef treble
+    \key g \major \time 2/1 \autoBeamOff \tempoAmen
+      \set Staff.timeSignatureFraction = 2/2
+    g'2\p h4. c8 d2. e8[ fis]
+    g4 d e h c8[ a h c] d4 c
+    h g d'1( cis2)
+    d1 r
+    r2 d2. c8[ h] c2~ %5
+    c4 h8[ a] h4 a8[ g] a4 h8[ c] d4 c
+    h g e'2 d2. e4
+    a,2 a' g4 fis e2~
+    e4 a, d1 cis2
+    d1 r %10
+    r d~
+    d4 c8[ d] e4 d c1~
+    c4 h8[ c] d4 c h c h a
+    g2~ g8[ a h c] fis,1
+    e r %15
+    e'8[ d e fis] e[ fis e d] c1
+    d8[ c d e] d[ e d c] h1~
+    h4 cis8[ d] cis4 h ais fis fis'2~
+    fis4 e8[ d] e2. d8[ cis] d4 cis8[ h]
+    cis1 h %20
+    R\breve*5 %25
+    e4 a,2 d4 h g h d
+    f d2 g,4 e' d c2
+    r1 r8 e[ d e] c[ e d c]
+    d[ d c d] h[ d c h] c[ c h c] a[ c h a]
+    h[ a h c] h[ d c h] a2 a %30
+    R\breve*3
+    g2 h4. cis8 d2. e8[ fis]
+    g4 d e h c8[ a h c] d4 c %35
+    h4. a8 g2 e'8[ f e f] e2
+    r1 d8[ e d e] d2
+    r1 c8[ d c d] c2
+    r1 h8[ c h c] h[ d c h]
+    a4 d c d8[ e] h2 a %40
+    g8 g'[ fis g] d2\trill r8 g[ fis g] h,2\trillE
+    r8 d[ e fis] g[ a g a] g2 r
+    r8 g[ fis e] d[ e c d] h4 c a2
+    g r r1
+    \time 2/2 R\fermata \bar "|." %45 finis
+  }
+}
+
+AmenSopranoSoloLyrics = \lyricmode {
+  A -- _ _ _ _
+  _ _ _ _ _ _ _
+  _ men, a --
+  men,
+  a -- _ _ %5
+  _ _ _ _ _ _ _
+  _ men, a -- _ _
+  _ _ _ _ _
+  _ _ _
+  men, %10
+  a --
+  _ _ _ _
+  _ _ _ _ _ _ _
+  _ _
+  men, %15
+  a -- _ _
+  _ _ _
+  _ _ _ _ men, a --
+  _ _ _ _ _
+  _ men, %20
+
+  a -- _ _ _ _ _ _ %26
+  _ _ _ _ _ men,
+  a -- _
+  _ _ _ _
+  _ _ _ men, %30
+
+  a -- _ _ _ _ %34
+  _ _ _ _ _ _ _ %35
+  _ _ men, a -- _
+  _ _
+  _ _
+  _ _
+  _ _ _ _ _ _ %40
+  men, a -- _ _ _
+  _ _ _
+  _ _ _ men, a --
+  men. %44 finis
+}

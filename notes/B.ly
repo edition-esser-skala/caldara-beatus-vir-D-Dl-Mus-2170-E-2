@@ -166,3 +166,59 @@ PeccatorBassoLyrics = \lyricmode {
   i -- bit, per -- %20
   i -- bit. %21 finis
 }
+
+AmenBasso = {
+  \relative c {
+    \clef bass
+    \key g \major \time 2/1 \autoBeamOff \tempoAmen
+      \set Staff.timeSignatureFraction = 2/2
+    R\breve*9 %9
+    r2 fis4\fE fis g e a2 %10
+    d,1 r
+    R\breve*3
+    r2 g4 g a fis h2 %15
+    e,1 r
+    R\breve*3
+    r1 r2 d4 d %20
+    e cis fis2 h, r
+    R\breve
+    r2 c4 c d h e2
+    a, r r1
+    r r2 h4 h %25
+    c a d2 g, r
+    r1 r2 e'4 e
+    f d g2 c, r
+    R\breve*8 %36
+    c'2 c, r1
+    h'2 h, r1
+    a'2 a, r1
+    R\breve*4 %43
+    r2 g'4 h, c a d2
+    \time 2/2 g,1\fermata \bar "|." %45 finis
+  }
+}
+
+AmenBassoLyrics = \lyricmode {
+  A -- men, a -- men, a -- %10
+  men,
+
+  a -- men, a -- men, a -- %15
+  men,
+
+  a -- men, %20
+  a -- men, a -- men,
+
+  a -- men, a -- men, a --
+  men,
+  a -- men, %25
+  a -- men, a -- men,
+  a -- men,
+  a -- men, a -- men,
+
+  a -- men, %37
+  a -- men,
+  a -- men,
+
+  a -- men, a -- men, a -- %44
+  men. %45 finis
+}

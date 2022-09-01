@@ -499,3 +499,94 @@ GloriaPatriAltoSoloLyrics = \lyricmode {
   lo -- rum, a --
   men. %40 finis
 }
+
+AmenAltoSolo = {
+  \relative c' {
+    \clef treble
+    \key g \major \time 2/1 \autoBeamOff \tempoAmen
+      \set Staff.timeSignatureFraction = 2/2
+    R\breve*3
+    d2\pE e4. fis8 g2~ g8[ a h c]
+    d4 a h fis g8[ e fis g] a4 g %5
+    fis d g1( fis2)
+    g a2. g8[ fis] g2~
+    g4 fis8[ e] fis4 e8[ d] e4 fis8[ g] a4 g
+    fis2. e8[ d] e1
+    d r %10
+    a'~ a4 g8[ a] h4 a
+    g1~ g4 fis8[ g] a4 g
+    fis\breve~
+    fis4 h, e1 dis2
+    e1 r %15
+    r a8[ g a h] a[ h a g]
+    fis1 g8[ fis g a] g[ a g fis]
+    e1~ e4 d8[ cis] d4 fis
+    g2. fis8[ e] fis2 h~
+    h ais h1 %20
+    r h4 fis2 h4
+    gis e gis h d! h2 e,4
+    c' h a2 r1
+    a4 e2 a4 fis! d fis a
+    c! a2 d,4^\critnote h' a g2 %25
+    R\breve*3
+    r8 h[ a h] g[ h a g] a[ a g a] fis[ a g fis]
+    g[ fis g a] g[ h a g] fis4. e8 d2 %30
+    R\breve
+    r1 d2 e4. fis8
+    g2~ g8[ a h cis] d4 a h fis
+    g2. fis8[ e] fis4. e8 d2
+    r g1( fis2) %35
+    g r c8[ d c d] c2
+    r1 h8[ c h c] h2
+    r1 a8[ h a h] a2
+    r1 g8[ a g a] g[ h a g]
+    fis2 g1 fis2 %40
+    g r8 g[ fis g] d2\trillE r8 g[ fis g]
+    h,2\trillE r r8 d[ e fis] g[ a g a]
+    g2 g2.( a4) fis2
+    g r r1
+    \time 2/2 R1\fermata \bar "|." %45 finis
+  }
+}
+
+AmenAltoSoloLyrics = \lyricmode {
+  A -- _ _ _ %4
+  _ _ _ _ _ _ _ %5
+  _ men, a --
+  men, a -- _ _
+  _ _ _ _ _ _ _
+  _ _ _
+  men, %10
+  a -- _ _ _
+  _ _ _ _
+  _
+  _ _ _
+  men, %15
+  a -- _
+  _ _ _
+  _ _ _ _
+  _ _ _ _
+  _ men, %20
+  a -- _ _
+  _ _ _ _ _ _ _
+  _ _ men,
+  a -- _ _ _ _ _ _
+  _ _ _ _ _ men, %25
+
+  a -- _ _ _ %29
+  _ _ _ _ men, %30
+
+  a -- _ _
+  _ _ _ _ _
+  _ _ _ _ men,
+  a -- %35
+  men, a -- _
+  _ _
+  _ _
+  _ _
+  _ _ _ %40
+  men, a -- _ _
+  _ _ _
+  _ men, __ a --
+  men. %44 finis
+}

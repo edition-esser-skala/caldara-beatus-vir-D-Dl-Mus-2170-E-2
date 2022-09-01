@@ -168,3 +168,59 @@ PeccatorAltoLyrics = \lyricmode {
   i -- bit, per -- %20
   i -- bit. %21 finis
 }
+
+AmenAlto = {
+  \relative c' {
+    \clef treble
+    \key g \major \time 2/1 \autoBeamOff \tempoAmen
+      \set Staff.timeSignatureFraction = 2/2
+    R\breve*9 %9
+    r2 a'4\fE a g g e2 %10
+    fis1 r
+    R\breve*3
+    r2 g4 g fis fis fis2 %15
+    e1 r
+    R\breve*3
+    r1 r2 fis4 fis %20
+    g g fis2 fis r
+    R\breve
+    r2 a4 a a a gis2
+    a r r1
+    r1 r2 g4 g %25
+    g g fis2 g r
+    r1 r2 g4 g
+    a a g2 g r
+    R\breve*8 %36
+    g2 g r1
+    g2 g r1
+    a2 a r1
+    R\breve*4 %43
+    r2 g1( fis2)
+    \time 2/2 g1\fermata \bar "|." %45 finis
+  }
+}
+
+AmenAltoLyrics = \lyricmode {
+  A -- men, a -- men, a -- %10
+  men,
+
+  a -- men, a -- men, a -- %15
+  men,
+
+  a -- men, %20
+  a -- men, a -- men,
+
+  a -- men, a -- men, a --
+  men,
+  a -- men, %25
+  a -- men, a -- men,
+  a -- men,
+  a -- men, a -- men,
+
+  a -- men, %37
+  a -- men,
+  a -- men,
+
+  a -- %44
+  men. %45 finis
+}

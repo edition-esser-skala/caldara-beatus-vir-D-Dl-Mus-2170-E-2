@@ -237,3 +237,34 @@ GloriaPatriViola = {
     c2.\fermata \bar "|." %45 finis
   }
 }
+
+AmenViola = {
+  \relative c' {
+    \clef alto
+    \key g \major \time 2/1 \tempoAmen
+      \set Staff.timeSignatureFraction = 2/2
+    R\breve*9 %9
+    r2 fis\fE g4 e a a, %10
+    d2 r r1
+    R\breve*3
+    r2 g\fE a4 fis h h, %15
+    e2-\critnote r r1
+    R\breve*3
+    r1 r2 d4 d\fE %20
+    e cis fis2 h, r
+    R\breve
+    r2 c\fE d4 h e e,
+    a2 r r1
+    r r2 h\fE %25
+    c4 a d2 g, r
+    r1 r2 e'\fE
+    f4 d g2 c, r
+    R\breve*8 %36
+    c'2\fE c, r1
+    h'2\fE h, r1
+    a'2\fE a, r1
+    R\breve*4 %43
+    r2 g'4\fE h, c a d d,
+    \time 2/2 g1\fermata \bar "|." %45 finis
+  }
+}

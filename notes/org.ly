@@ -997,3 +997,98 @@ GloriaPatriBassFigures = \figuremode {
   <[6]>4 <4> <3>
   r2. %45 finis
 }
+
+AmenOrgano = {
+  \relative c {
+    \clef bass
+    \key g \major \time 2/1 \tempoAmen
+      \set Staff.timeSignatureFraction = 2/2
+    \mvTr g'1\pE-\solo-\vlcorg fis4 e d c
+    h2 g1 fis2
+    g fis g a
+    d c! h4 a g2
+    fis d' e a, %5
+    d\breve
+    g2 c h2. cis4
+    d2 d,1 cis2
+    d4 e fis2 g a
+    d, \mvTr fis\fE-\tutti-\bassi g4 e a a, %10
+    d2 \mvTr c!\pE-\solo-\vlcorg h1
+    e a,
+    d dis
+    e2. g,4 a2 h
+    e \mvTr g\fE-\tutti-\bassi a4 fis h h, %15
+    e1 \mvTr a\pE-\solo-\vlcorg
+    d, e~
+    e fis2 h,
+    e1 h
+    e2 fis h, \mvTr d\fE-\tutti-\bassi %20
+    e4 cis fis fis, h2 \mvTr dis\pE-\solo-\vlcorg
+    e r e gis
+    a \mvTr c,\fE-\tutti-\bassi d4 h e e,
+    a2 \mvTr cis\pE-\solo-\vlcorg d r
+    d fis g \mvTr h,\fE-\tutti-\bassi %25
+    c4 a d d, g2 r
+    \mvTr g\pE-\solo-\vlcorg h c \mvTr e\fE-\tutti-\bassi
+    f4 d g g, c2 \mvTr c'\pE-\solo-\vlcorg
+    g1 c,2 d
+    g g, \mvTr d'\f-\tutti-\bassi c %30
+    h4 a g2 fis d'~
+    d cis d \mvTr c\p-\solo-\vlcorg
+    h e d1
+    e d2. c!4
+    h2 e a d, %35
+    g g, r1
+    \mvTr c'2\fE-\tutti-\bassi c, r1
+    h'2 h, r1
+    a'2 a, r1
+    R\breve*4 %43
+    r2 \mvTr g'4\fE-\tutti-\bassi h, c a d d,
+    \time 2/2 g1\fermata \bar "|." %45 finis
+  }
+}
+
+AmenBassFigures = \figuremode {
+  r1 <6>
+  <6>2 <[6]> <2> <6>
+  r <6>1 <_+>2
+  <5 3> <\t \t> <6>1
+  q2 q <7> <3> %5
+  <7> <6 4> <5 \t> <\t 3>
+  r <[6]> <7> <6>4 <\t>
+  <4>2 <3> <2> <3>
+  <[9]> <6> <[6 5]> <_+>
+  r <6> <5>4 <\t> <_+>2 %10
+  <5 3> <\t \t> <7>1
+  q q
+  q <6>
+  <9>2 <8>4 <[6]> <6 5>2 <_+>
+  r <6> <[6] 5>4 <\t> <_+>2 %15
+  r\breve
+  r1 <5>
+  <\t>2 <6\\>4 <[5]> <7 [5+] _+>1
+  <9>2 <8> <5 4> <\t 3>
+  <6\\ 5> <[5+] _+>1 <6>2 %20
+  <6\\ [5]> <[5+] _+> <_+> <6>
+  <_+>1 <[7!] _+>2 <6>
+  r <6> <6 [5] _!> <_+>
+  <_+> <6>1.
+  <[7!]>2 <6>1 q2 %25
+  <[6 5]>\breve
+  <7!>2 <6>1 q2
+  <[6 5]>\breve
+  r1 <[6]>2 <7>
+  r1 <5 3>2 <\t \t> %30
+  <6>1 q2 <[6]>
+  <4 2> <6>1 <4 2>2
+  <6> <[5]>4 <6\\> <5>2 <6>
+  <5>1 q2. <\t>4
+  <6>1 <7>2 <3> %35
+  r\breve
+  r
+  <6>
+  q
+  r\breve*4 %43
+  r1 <6 5>4 <\t \t>2.
+  r1 %45 finis
+}

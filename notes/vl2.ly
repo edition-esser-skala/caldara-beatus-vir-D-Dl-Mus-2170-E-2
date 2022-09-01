@@ -178,3 +178,42 @@ PeccatorViolinoII = {
     g c r\fermata \bar "|." %22 finis
   }
 }
+
+AmenViolinoII = {
+  \relative c' {
+    \clef treble
+    \key g \major \time 2/1 \tempoAmen
+      \set Staff.timeSignatureFraction = 2/2
+      R\breve*9 %9
+      r2 d'4\fE fis, g e a a, %10
+      d2 r r1
+      R\breve*3
+      r2 h'4\fE e, a fis h h, %15
+      e2 r r1
+      R\breve*3
+      r1 r2 h'4\f d, %20
+      e cis fis2 h, r
+      R\breve
+      r2 a'4\fE c, d h e2
+      a, r r1
+      r r2 g'4\fE h, %25
+      c a d2 g, r
+      r1 r2 c'4\fE e,
+      f d g g, c2 r
+      R\breve
+      r1 d'2\fE e4. fis8 %30
+      g2~ g8 a h cis d4 a h fis
+      g8 e fis g a4 g fis d, r2
+      R\breve*3 %35
+      r1 c'2\pE c,
+      c'8\fE d c d c2 h\pE h,
+      g''8\fE a g a g2 a,\pE a,
+      fis''8\fE g fis g fis2 g\pE g,
+      d4 d e d8 c d2 d %40
+      g, r g r
+      g r g r
+      g r g4 c d2
+      g, g''1\fE fis2
+      \time 2/2 g1\fermata \bar "|." %45 finis
+  }
+}

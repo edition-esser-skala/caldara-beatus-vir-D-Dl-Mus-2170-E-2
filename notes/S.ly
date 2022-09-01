@@ -168,3 +168,59 @@ PeccatorSopranoLyrics = \lyricmode {
   i -- bit, per -- %20
   i -- bit. %21 finis
 }
+
+AmenSoprano = {
+  \relative c' {
+    \clef treble
+    \key g \major \time 2/1 \autoBeamOff \tempoAmen
+      \set Staff.timeSignatureFraction = 2/2
+    R\breve*9 %9
+    r2 d'4\fE d h h a2 %10
+    a1 r
+    R\breve*3
+    r2 h4 h c c h2 %15
+    h1 r
+    R\breve*3
+    r1 r2 h4 h %20
+    h h ais2 h r
+    R\breve
+    r2 c4 c h h h2
+    cis r r1
+    r r2 h4 h %25
+    a a a2 h r
+    r1 r2 c~
+    c h c r
+    R\breve*8 %36
+    e2 e r1
+    d2 d r1
+    c2 c r1
+    R\breve*4 %43
+    r2 h4 h a a a2
+    \time 2/2 h1\fermata \bar "|." %45 finis
+  }
+}
+
+AmenSopranoLyrics = \lyricmode {
+  A -- men, a -- men, a -- %10
+  men,
+
+  a -- men, a -- men, a -- %15
+  men,
+
+  a -- men, %20
+  a -- men, a -- men,
+
+  a -- men, a -- men, a --
+  men,
+  a -- men, %25
+  a -- men, a -- men,
+  a --
+  _ men,
+
+  a -- men, %37
+  a -- men,
+  a -- men,
+
+  a -- men, a -- men, a -- %44
+  men. %45 finis
+}
