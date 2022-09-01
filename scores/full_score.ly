@@ -404,77 +404,113 @@
   %     \midi { \tempo 1 = 60 }
   %   }
   % }
+  % \bookpart {
+  %   \section "7" "Peccator videbit"
+  %   \addTocEntry
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "ob"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \PeccatorOboeI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \PeccatorOboeII
+  %           }
+  %         >>
+  %       >>
+  %       \new StaffGroup <<
+  %         \new GrandStaff \with { \smallGroupDistance } <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \PeccatorViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \PeccatorViolinoII
+  %           }
+  %         >>
+  %         \new Staff {
+  %           \set Staff.instrumentName = "vla"
+  %           \PeccatorViola
+  %         }
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \PeccatorSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \PeccatorSopranoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \PeccatorAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \PeccatorAltoLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \PeccatorTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \PeccatorTenoreLyrics
+  %
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \PeccatorBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \PeccatorBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \PeccatorOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \PeccatorBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 1. = 50 }
+  %   }
+  % }
   \bookpart {
-    \section "7" "Peccator videbit"
-    % \addTocEntry
+    \section "8" "Gloria Patri"
+    \addTocEntry
+    \paper {
+      system-system-spacing.basic-distance = #20
+      system-system-spacing.minimum-distance = #20
+      systems-per-page = #4
+    }
     \score {
       <<
-        \new StaffGroup <<
-          \new GrandStaff <<
-            \set GrandStaff.instrumentName = "ob"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \PeccatorOboeI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \PeccatorOboeII
-            }
-          >>
-        >>
-        \new StaffGroup <<
-          \new GrandStaff \with { \smallGroupDistance } <<
-            \set GrandStaff.instrumentName = "vl"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \PeccatorViolinoI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \PeccatorViolinoII
-            }
-          >>
+        \new StaffGroup \with { \smallGroupDistance } <<
           \new Staff {
             \set Staff.instrumentName = "vla"
-            \PeccatorViola
+            \GloriaPatriViola
           }
         >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \PeccatorSoprano }
-          }
-          \new Lyrics \lyricsto Soprano \PeccatorSopranoLyrics
-
-          \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \PeccatorAlto }
+            \new Voice = "AltoSolo" { \dynamicUp \GloriaPatriAltoSolo }
           }
-          \new Lyrics \lyricsto Alto \PeccatorAltoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \PeccatorTenore }
-          }
-          \new Lyrics \lyricsto Tenore \PeccatorTenoreLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \PeccatorBasso }
-          }
-          \new Lyrics \lyricsto Basso \PeccatorBassoLyrics
+          \new Lyrics \lyricsto AltoSolo \GloriaPatriAltoSoloLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
-            \transpose c c,
-            \PeccatorOrgano
+            % \transpose c c,
+            \GloriaPatriOrgano
           }
         >>
-        \new FiguredBass { \PeccatorBassFigures }
+        \new FiguredBass { \GloriaPatriBassFigures }
       >>
-      % \layout { }
-      \midi { \tempo 1. = 50 }
+      \layout { }
+      \midi { \tempo 4 = 100 }
     }
   }
 }

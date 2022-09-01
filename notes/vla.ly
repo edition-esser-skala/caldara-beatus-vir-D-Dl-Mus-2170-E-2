@@ -193,3 +193,47 @@ PeccatorViola = {
     g2 c r\fermata \bar "|." %22 finis
   }
 }
+
+GloriaPatriViola = {
+  \relative c' {
+    \clef alto
+    \key a \minor \time 3/4 \tempoGloriaPatri
+    R2.*4
+    r8 a'16\fE h c8 a h, gis' %5
+    a, a'16 h c8 a c, a'
+    h, g'16 a h8 g h, g'
+    a, f'16 g a8 f a, f'
+    gis, f' e d c h
+    c d e4 e, %10
+    a2 r4
+    R2.*3
+    r8 a'16\p h c8 a h, gis' %15
+    a, a'16 h c8 a c, a'
+    h, g'16 a h8 g h, g'
+    a, f'16 g a8 f a, f'
+    g, g'16 a h8 g h, g'
+    c, f g4 g, %20
+    c8 c'16\fE d e8 c d, h'
+    c, c'16 d e8 c e, c'
+    d, h'16 c d8 h d, h'
+    c, a'16 h c8 a c,\pE a'
+    h, gis'16 a h8 gis h, gis' %25
+    a, a'16 h c8 a c, a'
+    g e16 f g8 e f d
+    e4. fis8 gis e
+    a, a'16 h c8 a c, a'
+    h, h'16 cis dis8 h h, h' %30
+    e, a h4 h,
+    e8 c'16\fE d e8 c e, c'
+    d, h'16 c d8 h d, h'
+    c, a'16 h c8 a c, a'
+    d,4 r r %35
+    R2.*4
+    r8 c'16\fE d e8 c e, c' %40
+    d, h'16 c d8 h d, h'
+    c, a'16 h c8 a c, a'
+    h, a' g f e d
+    e f g4 g,
+    c2.\fermata \bar "|." %45 finis
+  }
+}

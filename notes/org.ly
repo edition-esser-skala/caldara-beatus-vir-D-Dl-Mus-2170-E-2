@@ -897,3 +897,103 @@ PeccatorBassFigures = \figuremode {
   r
   r %22 finis
 }
+
+GloriaPatriOrgano = {
+  \relative c {
+    \clef bass
+    \key a \minor \time 3/4 \tempoGloriaPatri
+    \mvTr a2\pE-\solo-\vlcorg a'4~
+    a gis8 fis gis4
+    a d, f
+    e2.
+    r8 \mvTr a16\f-\bassi h c8 a h, gis' %5
+    a, a'16 h c8 a c, a'
+    h, g'16 a h8 g h, g'
+    a, f'16 g a8 f a, f'
+    gis, f' e d c h
+    c d e4 e, %10
+    a2 \mvTr a'4~\p-\vlcorg
+    a gis8 fis gis^\critnote e
+    a4 g f
+    e2.
+    r8 a16 h c8 a h, gis' %15
+    a, a'16 h c8 a c, a'
+    h, g'16 a h8 g h, g'
+    a, f'16 g a8 f a, f'
+    g, g'16 a h8 g h, g'
+    c, f g4 g, %20
+    c8 \mvTr c'16\f-\bassi d e8 c d, h'
+    c, c'16 d e8 c e, c'
+    d, h'16 c d8 h d, h'
+    c, a'16 h c8 a << { \mvTr c,^\p^\vlcorg a' } \\ { a,4_\bassi } >>
+    h8 gis'16 a h8 gis h, gis' %25
+    a, a'16 h c8 a c, a'
+    g e16 f g8 e f d
+    e4. fis8 gis e
+    a, a'16 h c8 a c, a'
+    h, h'16 cis dis8 h h, h' %30
+    e, a h4 h,
+    e8 \mvTr c'16\fE-\bassi d e8 c e, c'
+    d, h'16 c d8 h d, h'
+    c, a'16 h c8 a c, a'
+    d,4 r8 \mvTr d16\pE-\vlcorg e fis8 d %35
+    g4 r g
+    a r h
+    c8 a16 h c8 e, d c
+    g' f g4 g,
+    c8 \mvTr c'16\fE-\bassi d e8 c e, c' %40
+    d, h'16 c d8 h d, h'
+    c, a'16 h c8 a c, a'
+    h, a' g f e d
+    e f g4 g,
+    c2.\fermata \bar "|." %45 finis
+  }
+}
+
+GloriaPatriBassFigures = \figuremode {
+  r2.
+  <2>4 <[3]>2
+  r4 <6>2
+  <_+>2.
+  r2 <[6\\]>4 %5
+  <9> <6> <\t>
+  <7> <6> <\t>
+  <7> <6> <\t>
+  <6> <_+> <6>8 <6\\>
+  <6>4 <4> <_+> %10
+  r2.
+  <2>4 <3>2
+  r2.
+  <_+>
+  r2 <6\\>4 %15
+  <9> <6> <\t>
+  <7> <6> <\t>
+  <7> <6> <\t>
+  <7>2.
+  r8 <[6]> r2 %20
+  r <6>4
+  <9> <6> <\t>
+  <7> <6> <\t>
+  r8 <5 3> <6>4 <\t>
+  <6\\>2 <\t>4 %25
+  <9> <6> <\t>
+  r8 <6>4 q8 <5> <6>
+  <_+>2.
+  r4 <6> <\t>
+  <[5+] _+>2. %30
+  r4 <5+ 4> <\t _+>
+  <5>8 <5 3> <6>4 <\t>
+  <7> <6> <\t>
+  <7> <6> <\t>
+  <_+>2. %35
+  r
+  <6!>2 <5>4
+  <5>8 q4. <6>4
+  <6 [4]> <4> <3>
+  r <6> <\t> %40
+  <7> <6> <\t>
+  <7> <6> <\t>
+  <6>2 q8 q
+  <[6]>4 <4> <3>
+  r2. %45 finis
+}

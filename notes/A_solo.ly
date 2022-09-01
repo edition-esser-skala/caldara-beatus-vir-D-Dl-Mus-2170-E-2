@@ -419,3 +419,83 @@ DispersitAltoSoloLyrics = \lyricmode {
   ta -- bi -- tur in glo --
   ri -- a. %32 finis
 }
+
+GloriaPatriAltoSolo = {
+  \relative c' {
+    \clef treble
+    \key a \minor \time 3/4 \autoBeamOff \tempoGloriaPatri
+    a'4.\pE h8 c4
+    h e,2
+    c'4 h a
+    gis4. fis8 e4
+    R2.*6 %10
+    a4. h8 c4
+    h e,2
+    c'4 h a
+    gis4. fis8 e4
+    r e d %15
+    c4. d8 e4
+    d4. e16[ f] g8[ e]
+    c[ e] f4. d8
+    h'4. c8[ d f,]
+    e8.[ f16] d2 %20
+    c r4
+    R2.*2
+    r4 e a
+    gis8. fis16 gis4. h8 %25
+    a8. gis16 a4. c8
+    h4. c8 a h
+    gis4.( fis8) e4
+    r a c
+    dis,8. e16 fis4 h8 a %30
+    g8. a16 fis2
+    e r4
+    R2.
+    r4 e a
+    fis8 e16 fis d4. a'8 %35
+    h[ d16 c] d8[ g,( f e])
+    f[ d'16 c] d8[ \once \slurDashed f,( e d])
+    e4. c'8 h8. c16
+    e,8. f16 d2
+    c r4 %40
+    R2.*4
+    R2.\fermata \bar "|." %45 finis
+  }
+}
+
+GloriaPatriAltoSoloLyrics = \lyricmode {
+  Glo -- ri -- a
+  Pa -- tri,
+  Pa -- tri et
+  Fi -- li -- o,
+
+  glo -- ri -- a %11
+  Pa -- tri,
+  Pa -- tri et
+  Fi -- li -- o
+  et Spi -- %15
+  ri -- tu -- i
+  San -- _ _
+  _ _ _
+  _ _
+  _ _ %20
+  cto.
+
+  Si -- cut %24
+  e -- rat in prin -- %25
+  ci -- pi -- o et
+  nunc, et nunc et
+  sem -- per
+  et in
+  sae -- cu -- la sae -- cu -- %30
+  lo -- rum, a --
+  men,
+
+  et in
+  sae -- cu -- la sae -- cu -- %35
+  lo -- _
+  _ _
+  _ rum, sae -- cu --
+  lo -- rum, a --
+  men. %40 finis
+}

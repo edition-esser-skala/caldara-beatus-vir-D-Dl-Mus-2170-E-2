@@ -380,7 +380,3 @@ DispersitSopranoSoloLyrics = \lyricmode {
   _ _ _ _ bi -- tur in
   glo -- ri -- a. %32 finis
 }
-
-% Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
-% si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
-% et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.

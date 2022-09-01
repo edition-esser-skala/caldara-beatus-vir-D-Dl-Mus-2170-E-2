@@ -19,6 +19,7 @@ tempoDispersit = \tempoMarkup "Alla breve"
 tempoPeccator = \tempoMarkup "Largo"
   tempoEtIrascetur = \tempoMarkup "Allegro"
   tempoDesiderium = \tempoMarkup "Andante"
+tempoGloriaPatri = \tempoMarkup "Larghetto"
 
 
 \include "notes/ob1.ly"
