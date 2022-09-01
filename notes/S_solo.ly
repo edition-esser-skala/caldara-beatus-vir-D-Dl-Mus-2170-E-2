@@ -316,9 +316,71 @@ ParatumSopranoSoloLyrics = \lyricmode {
   os. %28 finis
 }
 
-% Dis -- per -- sit de -- dit pau -- pe -- ri -- bus:
-% Iu -- sti -- ti -- a e -- ius ma -- net in sae -- cu -- lum sae -- cu -- li:
-% Cor -- nu e -- ius ex -- al -- ta -- bi -- tur in glo -- ri -- a.
+DispersitSopranoSolo = {
+  \relative c' {
+    \clef treble
+    \key e \minor \time 2/1 \autoBeamOff \tempoDispersit
+      \set Staff.timeSignatureFraction = 2/2
+    r2 \mvTr h'\pE^\solo c1
+    h2 e1 dis2
+    e fis4 e dis4. cis8 h2
+    R\breve*4 %7
+    r1 r2 h
+    c1 h2 e~
+    e dis e fis4 e %10
+    dis4. cis8 h2 r e
+    c4. h8 a2 a d
+    h4( a) g2 r d'
+    d8[ e d e] d[ e d e] d1~
+    d8[ g fis g] d[ g fis g] c,1~ %15
+    c8[ f e f] c[ f e f] h,1~
+    h8[ e d e] h[ e d e] a,1~
+    a8[ d c d] a[ d c d] g,2. a8[ h]
+    a[ c h d] c2~ c4 h8[ a] h4 h
+    h4. a8 a2 r1 %20
+    R\breve*4
+    d2 h e4 d c h %25
+    c1~ c4 a h c
+    a2. a4 g1
+    R\breve
+    h2^\critnote g' e4 d c h
+    a\breve~ %30
+    a4 h8[ c] h4 a g fis g a
+    fis2. fis4 e1
+    R\breve*4
+    \time 2/2 R1\fermata \bar "|."
+  }
+}
+
+DispersitSopranoSoloLyrics = \lyricmode {
+  Dis -- per --
+  sit de -- dit,
+  de -- dit pau -- pe -- ri -- bus,
+
+  dis -- %8
+  per -- sit de --
+  dit, de -- dit pau -- %10
+  pe -- ri -- bus, iu --
+  sti -- ti -- a e -- ius
+  ma -- net in
+  sae -- _ _
+  _ _ %15
+  _ _
+  _ _
+  _ _ _
+  _ _ _ cu -- lum
+  sae -- cu -- li. %20
+
+  Cor -- nu e -- ius ex -- al -- %25
+  ta -- bi -- tur in
+  glo -- ri -- a,
+
+  cor -- nu e -- ius ex -- al --
+  ta -- %30
+  _ _ _ _ bi -- tur in
+  glo -- ri -- a. %32 finis
+}
+
 % Pec -- ca -- tor vi -- de -- bit et i -- ra -- sce -- tur,
 % den -- ti -- bus su -- is fre -- met et ta -- be -- scet:
 % De -- si -- de -- ri -- um pec -- ca -- to -- rum per -- i -- bit.

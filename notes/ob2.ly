@@ -100,3 +100,31 @@ ParatumOboeII = {
     h1.\fermata \bar "|." %30 finis
   }
 }
+
+DispersitOboeII = {
+  \relative c' {
+    \clef treble
+    \key e \minor \time 2/1 \tempoDispersit
+      \set Staff.timeSignatureFraction = 2/2
+    R\breve*3
+    r1 e'8\fE d c h a[ g fis e]
+    fis4 d'2 fis,4 d'8[ c h a] g fis e d %5
+    e4 c'2 e,4 c'8[ h a g] a g fis e
+    dis2. dis4 e8[ fis g a] h4 e,
+    e2 dis e r
+    R\breve*14 %22
+    e'8[\fE d c h] a g fis e] fis2. fis4
+    g8[ a h c] d4 g, g2 fis
+    g r r1 %25
+    R\breve
+    r1 d'8[\fE c h a] g fis e d
+    e4 c'2 e,4 dis a'2 dis,4
+    e2 r r1
+    R\breve*3 %32
+    e'8[\fE d c h] a g fis e fis4 d'2 fis,4
+    d'8[ c h a] g fis e d e4 c'2 e,4
+    c'8[ h a g] a g fis e] dis2. dis4 %35
+    e8[ fis g a] h4 e, e2 dis
+    \time 2/1 e1\fermata \bar "|." %37 finis
+  }
+}

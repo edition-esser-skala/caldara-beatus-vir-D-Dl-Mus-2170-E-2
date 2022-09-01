@@ -234,3 +234,38 @@ ParatumViolinoI = {
     h1.\fermata \bar "|." %30 finis
   }
 }
+
+DispersitViolinoI = {
+  \relative c' {
+    \clef treble
+    \key e \minor \time 2/1 \tempoDispersit
+      \set Staff.timeSignatureFraction = 2/2
+    R\breve*3
+    h''8\fE a g fis e[ d c h] c4 a'2 c,4
+    a'8 g fis e d[ c h a] h4 g'2 h,4 %5
+    g'8 fis e d c[ h a g] a4 fis'2 a,4
+    fis'8 e dis cis h[ a g fis] g4 e'2 g,4
+    g2 fis e r
+    R\breve*2 %10
+    r1 h''8\pE a g fis e[ d c h]
+    c4 a' r2 a8 g fis e d[ c h a]
+    h4 g' r2 r1
+    R\breve*6 %19
+    r1 d'8\fE c h a g[ fis e d] %20
+    e4 c'2 e,4 c'8 h a g fis[ e d cis]
+    d4 h'2 d,4 h'8 a g f e[ d c h]
+    c4 a'2 c,4 a'8 g fis e d[ c h a]
+    h4 g'2 h,4 h2 a
+    g r r1 %25
+    R\breve*2
+    g'8\fE fis e d c[ h a g] a4 fis'2 a,4
+    g h e2 r1
+    R\breve*2 %31
+    r1 h'8\fE a g fis e[ d c h]
+    c4 a'2 c,4 a'8 g fis e d[ c h a]
+    h4 g'2 h,4 g'8 fis e d c[ h a g]
+    a4 fis'2 a,4 fis'8 e dis cis h[ a g fis] %35
+    g4 e'2 g,4 g2 fis
+    \time 2/1 e1\fermata \bar "|." %37 finis
+  }
+}

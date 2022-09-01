@@ -752,3 +752,88 @@ ParatumBassFigures = \figuremode {
   r \bo <[5+] 4> <\t _+>
   \bc <[_+]>1. %30 finis
 }
+
+DispersitOrgano = {
+  \relative c {
+    \clef bass
+    \key e \minor \time 2/1 \tempoDispersit
+      \set Staff.timeSignatureFraction = 2/2
+    \mvTr e4\pE-\solo-\vlcorg fis g e a, h c a
+    e' fis g a h h, dis h
+    c1 h
+    \mvTr e4\f-\bassi fis g g, a' h c a
+    d, e fis d g, a h2 %5
+    c r4 e a,2 r4 a
+    h2 r4 h e e g e
+    h'2 h, << { e4^\vlcorg fis g^\p e } \\ { e2_\bassi r } >>
+    a4 h c a e fis g a
+    h h, dis h c1 %10
+    h e4 fis g e
+    a1 d,
+    g4 a h c d, e fis d
+    g a h c h a h g
+    e1 a %15
+    d, g
+    c,\breve
+    h1 e
+    a,2. d4 g2 g,
+    d'1 \mvTr g2\f-\bassi r4 g %20
+    c2 r4 e a,2 r4 a
+    h2 r4 h e,2 r4 e
+    a,2 r4 a' d,2 r4 d
+    g a h g d'2 d,
+    g \mvTr g,\p-\vlcorg c1~ %25
+    c d2 g4 c,
+    d2 d, << { g1^\vlcorg } \\ { r2_\bassi g\f } >>
+    c1 h2 dis4 h
+    << { e2.^\vlcorg d4^\p } \\ { e2 r } >> c4 h a g
+    a2. h4 c1 %30
+    h e2. a,4
+    h1 \mvTr e2\f-\bassi r4 e
+    a2 r4 a d,2 r4 d
+    g,2 r4 g' c,2 r4 e
+    a,2 r4 a h2 r4 h %35
+    e e g e h'2 h,
+    \time 2/2 e1\fermata \bar "|." %37 finis
+  }
+}
+
+DispersitBassFigures = \figuremode {
+  r\breve
+  r2 <6> <4> <6>
+  <7> <6> <_+>1
+  r\breve
+  r %5
+  r2. <5>4 r1
+  <_+>\breve
+  <6 4>2 <5 _+>1.
+  r <6>2
+  <4> <6> <7> <6> %10
+  <_+>\breve
+  <_!>
+  r2 <6>1.
+  r2 q q1
+  <7> q %15
+  <7 _!> <7!>
+  <7> <6>
+  <7> q
+  r\breve
+  <6 4>2 <5 3>1. %20
+  r1 <6>
+  <5>\breve
+  r
+  r2 <6> <6 4> <5 3>
+  r\breve %25
+  <6>1 <7>
+  <5 3>\breve
+  r1 <7 _+>2 <\t \t>
+  <3>1 <5>
+  r <6> %30
+  <7 _+>\breve
+  <5 4>2 <\t _+>1.
+  r\breve
+  r
+  <6>1 <5 _+> %35
+  r <6 4>2 <5 _+>
+  r1 %37 finis
+}

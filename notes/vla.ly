@@ -133,3 +133,35 @@ ParatumViola = {
     h1.\fermata \bar "|." %30 finis
   }
 }
+
+DispersitViola = {
+  \relative c' {
+    \clef alto
+    \key e \minor \time 2/1 \tempoDispersit
+      \set Staff.timeSignatureFraction = 2/2
+    R\breve*3
+    e4\fE fis g g, a' h c a
+    d, e fis d g, a h2 %5
+    c r4 e a,2 r4 a
+    h2 r4 h e e g e
+    h'2 h, e r
+    R\breve*11
+    r1 g2\fE r4 g %20
+    c2 r4 e a,2 r4 a
+    h2 r4 h e,2 r4 e
+    a,2 r4 a' d,2 r4 d
+    g a h g d'2 d,
+    g r r1 %25
+    R\breve
+    r1 g,\fE
+    c h2 dis4 h
+    e2 r r1
+    R\breve*2 %31
+    r1 e2\fE r4 e
+    a2 r4 a d,2 r4 d
+    g,2 r4 g' c,2 r4 e
+    a,2 r4 a h2 r4 h %35
+    e e g e h'2 h,
+    \time 2/2 e1\fermata \bar "|." %37 finis
+  }
+}

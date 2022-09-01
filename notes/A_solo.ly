@@ -358,3 +358,64 @@ ParatumAltoSoloLyrics = \lyricmode {
   mi -- cos su --
   os. %28 finis
 }
+
+DispersitAltoSolo = {
+  \relative c' {
+    \clef treble
+    \key e \minor \time 2/1 \autoBeamOff \tempoDispersit
+      \set Staff.timeSignatureFraction = 2/2
+    r1 r2 \mvTr e\pE^\solo
+    g1 fis2 h~
+    h a4. a8 h4. fis8 fis2
+    R\breve*5 %8
+    r2 e g1
+    fis2 h1 a4. a8 %10
+    h4. fis8 fis2 r1
+    r2 a fis4. e8 d2
+    d g fis4.( e8) d2
+    r g g8[ a g a] g[ a g a]
+    g1~ g8[ c h c] g[ c h c] %15
+    f,1~ f8[ g f g] f[ g f g]
+    e1~ e8[ a g a] e[ a g a]
+    d,1~ d8[ g fis! g] d[ g fis g]
+    c,[ e d fis] e[ g fis a] g2 g4 g
+    g4. fis8 fis2 r1 %20
+    R\breve*4
+    r1 g2 e %25
+    a4 g fis e fis4. fis8 g4 e
+    fis2. fis4 g1
+    R\breve*2
+    e2 c' a4 g fis e %30
+    dis2. dis4 e dis e2~
+    e dis e1
+    R\breve*4 %36
+    \time 2/1 R1\fermata \bar "|." %37 finis
+  }
+}
+
+DispersitAltoSoloLyrics = \lyricmode {
+  Dis --
+  per -- sit de --
+  dit pau -- pe -- ri -- bus,
+
+  dis -- per -- %9
+  sit de -- dit pau -- %10
+  pe -- ri -- bus,
+  iu -- sti -- ti -- a
+  e -- ius ma -- net
+  in sae -- _
+  _ _ %15
+  _ _
+  _ _
+  _ _
+  _ _ _ cu -- lum
+  sae -- cu -- li. %20
+
+  Cor -- nu %25
+  e -- ius ex -- al -- ta -- bi -- tur in
+  glo -- ri -- a,
+
+  cor -- nu e -- ius ex -- al -- %30
+  ta -- bi -- tur in glo --
+  ri -- a. %32 finis
+}
