@@ -269,3 +269,31 @@ DispersitViolinoI = {
     \time 2/1 e1\fermata \bar "|." %37 finis
   }
 }
+
+PeccatorViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoPeccator
+    r4 g''\fE g2
+    g f
+    f\fermata r4 f
+    e e8 e d2 \noBreak
+    d1\fermata \bar "||" %5
+    \tempoEtIrascetur R1*2
+    r2 c16 c c c c c c c
+    c c c c c c c c d d d d d d d d
+    d d d d d d d d g g g g g g g g %10
+    e e e e e e e e f f f f f f f f
+    f f f f f f f f d d d d e e e e \noBreak
+    d h h h c c c c c4 h\fermata \bar "||"
+    \time 3/2 \tempoDesiderium c2 r g' \noBreak
+    f r f %15
+    f r f
+    f e e
+    d d g
+    r c, a'
+    r e e, %20
+    r e' e,4 c
+    g2 c r\fermata \bar "|." %22 finis
+  }
+}

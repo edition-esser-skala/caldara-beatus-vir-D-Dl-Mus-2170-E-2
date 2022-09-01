@@ -165,3 +165,31 @@ DispersitViola = {
     \time 2/2 e1\fermata \bar "|." %37 finis
   }
 }
+
+PeccatorViola = {
+  \relative c' {
+    \clef alto
+    \key c \major \time 4/4 \tempoPeccator
+    r4 c\fE c2
+    c a
+    g\fermata r4 g
+    c2 fis, \noBreak
+    g1\fermata \bar "||" %5
+    \tempoEtIrascetur R1*2
+    r2 r8 c d e
+    f4. e16 f d8 d e f
+    g4. f16 g e4 e %10
+    a8 a a a f f f f
+    f f f f g g c, c \noBreak
+    g' g c c g4 g,\fermata \bar "||"
+    \time 3/2 \tempoDesiderium c2 c' c \noBreak
+    a1 a2 %15
+    h1 h2
+    c c, c
+    g' g, r4 g'
+    c2 e, r4 f
+    g2 c, r4 c %20
+    g2 c r4 c-\solo
+    g2 c r\fermata \bar "|." %22 finis
+  }
+}

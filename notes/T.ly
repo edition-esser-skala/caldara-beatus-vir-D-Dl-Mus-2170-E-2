@@ -115,3 +115,54 @@ ParatumTenoreLyrics = \lyricmode {
   mi -- cos su --
   os. %30 finis
 }
+
+PeccatorTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \major \time 4/4 \autoBeamOff \tempoPeccator
+    r4 \mvTr c\fE^\tutti c2
+    c4 c c2
+    h\fermata r4 h
+    c c8 c c2 \noBreak
+    h1\fermata \bar "||" %5
+    \tempoEtIrascetur R1*2
+    r8 g a h c4. h16[ c]
+    a8[ a h c] d4. c16[ d]
+    h4 h e8 e16 e e8 e %10
+    c c r4 c8 c16 c c8 c
+    a a r4 r e'8 e \noBreak
+    d d e e e4 d\fermata \bar "||"
+    \time 3/2 \tempoDesiderium r2 e e \noBreak
+    c2. c4 c2 %15
+    d d1
+    c2 c c
+    d d r4 d
+    e2 e r4 e
+    d2 e r4 c %20
+    h2 c r
+    R1.\fermata \bar "|." %22 finis
+  }
+}
+
+PeccatorTenoreLyrics = \lyricmode {
+  Pec -- ca --
+  tor vi -- de --
+  bit, pec --
+  ca -- tor vi -- de --
+  bit %5
+
+  et i -- ra -- sce -- _ %8
+  _ _ _
+  _ tur, den -- ti -- bus su -- is %10
+  fre -- met, den -- ti -- bus su -- is
+  fre -- met, fre -- met,
+  fre -- met, et ta -- be -- scet:
+  De -- si --
+  de -- ri -- um %15
+  pec -- ca --
+  to -- rum per --
+  i -- bit, per --
+  i -- bit, per --
+  i -- bit, per -- %20
+  i -- bit. %21 finis
+}

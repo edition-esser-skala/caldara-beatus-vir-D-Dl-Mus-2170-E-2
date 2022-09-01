@@ -115,3 +115,54 @@ ParatumBassoLyrics = \lyricmode {
   mi -- cos su --
   os. %30 finis
 }
+
+PeccatorBasso = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \autoBeamOff \tempoPeccator
+    r4 \mvTr c\fE^\tutti c2
+    c4 c a2
+    g\fermata r4 g'
+    c c8 c fis,2 \noBreak
+    g1\fermata \bar "||" %5
+    \tempoEtIrascetur R1*2
+    r2 r8 c, d e
+    f4. e16[ f] d8[ d e f]
+    g4. f16[ g] e4 e %10
+    a8 a16 a a8 a f f r4
+    f8 f16 f f8 f g g c, c \noBreak
+    g' g c c g4 g,\fermata \bar "||"
+    \time 3/2 \tempoDesiderium r2 c' c \noBreak
+    a2. a4 a2 %15
+    h h1
+    c2 c, c
+    g' g, r4 g'
+    c2 e, r4 f
+    g2 c, r4 c %20
+    g2 c r
+    R1.\fermata \bar "|." %22 finis
+  }
+}
+
+PeccatorBassoLyrics = \lyricmode {
+  Pec -- ca --
+  tor vi -- de --
+  bit, pec --
+  ca -- tor vi -- de --
+  bit %5
+
+  et i -- ra -- %8
+  sce -- _ _
+  _ _ _ tur, %10
+  den -- ti -- bus su -- is fre -- met,
+  den -- ti -- bus su -- is fre -- met, fre -- met,
+  fre -- met, et ta -- be -- scet:
+  De -- si --
+  de -- ri -- um %15
+  pec -- ca --
+  to -- rum per --
+  i -- bit, per --
+  i -- bit, per --
+  i -- bit, per -- %20
+  i -- bit. %21 finis
+}

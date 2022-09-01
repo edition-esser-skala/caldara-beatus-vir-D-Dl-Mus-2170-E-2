@@ -115,3 +115,56 @@ ParatumAltoLyrics = \lyricmode {
   mi -- cos su --
   os. %30 finis
 }
+
+PeccatorAlto = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \autoBeamOff \tempoPeccator
+    r4 \mvTr g'\fE^\tutti g2
+    g4 g a2
+    d,\fermata r4 g
+    g g8 g a2 \noBreak
+    g1\fermata %5
+    \tempoEtIrascetur r2 r8 c, d e \noBreak
+    f4. e16[ f] d8[ d e f]
+    g4. f16[ g] e4 e
+    a8 a16 a a8 a f f r4
+    r8 d e f g4.( f16[ g] %10
+    e4) e a8 a16 a a8 a
+    f f r4 g8 g g g \noBreak
+    g g g g g4 g\fermata \bar "||"
+    \time 3/2 \tempoDesiderium r2 g g \noBreak
+    f2. f4 f2 %15
+    f f1
+    f2 e e
+    g g r4 g
+    g2 g r4 a
+    g2 g r4 e %20
+    d2 e r
+    R1.\fermata \bar "|." %22 finis
+  }
+}
+
+PeccatorAltoLyrics = \lyricmode {
+  Pec -- ca --
+  tor vi -- de --
+  bit, pec --
+  ca -- tor vi -- de --
+  bit %5
+  et i -- ra --
+  sce -- _ _
+  _ _ _ tur,
+  den -- ti -- bus su -- is fre -- met,
+  et i -- ra -- sce -- %10
+  tur, den -- ti -- bus su -- is
+  fre -- met, fre -- met, fre -- met,
+  fre -- met, et ta -- be -- scet:
+  De -- si --
+  de -- ri -- um %15
+  pec -- ca --
+  to -- rum per --
+  i -- bit, per --
+  i -- bit, per --
+  i -- bit, per -- %20
+  i -- bit. %21 finis
+}

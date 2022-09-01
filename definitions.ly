@@ -16,6 +16,9 @@ tempoExortum = \tempoMarkup "Largo"
 tempoIucundus = \tempoMarkup "Allegro"
 tempoParatum = \tempoMarkup "Andante"
 tempoDispersit = \tempoMarkup "Alla breve"
+tempoPeccator = \tempoMarkup "Largo"
+  tempoEtIrascetur = \tempoMarkup "Allegro"
+  tempoDesiderium = \tempoMarkup "Andante"
 
 
 \include "notes/ob1.ly"

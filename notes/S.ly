@@ -115,3 +115,56 @@ ParatumSopranoLyrics = \lyricmode {
   mi -- cos su --
   os. %30 finis
 }
+
+PeccatorSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \autoBeamOff \tempoPeccator
+    r4 \mvTr e'\fE^\tutti e2
+    e4 e f2
+    f\fermata r4 f
+    e e8 e d2 \noBreak
+    d1\fermata %5
+    \tempoEtIrascetur r8 g, a h c4. h16[ c] \noBreak
+    a8[ a h c] d4. c16[ d]
+    h4 h e8 e16 e e8 e
+    c c r4 f8 f16 f f8 f
+    d d r4 r8 g, a h %10
+    c4.( h16[ c] a4) a
+    d8 d16 d d8 c h h c c \noBreak
+    h h c c c4 h\fermata \bar "||"
+    \time 3/2 \tempoDesiderium r2 c c \noBreak
+    c2. h4 a2 %15
+    g g1
+    g2 g g
+    h h r4 h
+    c2 c r4 c
+    h2 c r4 g %20
+    g2 g r
+    R1.\fermata \bar "|." %22 finis
+  }
+}
+
+PeccatorSopranoLyrics = \lyricmode {
+  Pec -- ca --
+  tor vi -- de --
+  bit, pec --
+  ca -- tor vi -- de --
+  bit %5
+  et i -- ra -- sce -- _
+  _ _ _
+  _ tur, den -- ti -- bus su -- is
+  fre -- met, den -- ti -- bus su -- is
+  fre -- met, et i -- ra -- %10
+  sce -- tur,
+  den -- ti -- bus su -- is fre -- met, fre -- met,
+  fre -- met, et ta -- be -- scet:
+  De -- si --
+  de -- ri -- um %15
+  pec -- ca --
+  to -- rum per --
+  i -- bit, per --
+  i -- bit, per --
+  i -- bit, per -- %20
+  i -- bit. %21 finis
+}

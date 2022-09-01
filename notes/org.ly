@@ -837,3 +837,63 @@ DispersitBassFigures = \figuremode {
   r <6 4>2 <5 _+>
   r1 %37 finis
 }
+
+PeccatorOrgano = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \tempoPeccator
+    r4 \mvTr c\fE-\tutti c2
+    c a
+    g\fermata r4 g
+    c2 fis, \noBreak
+    g1\fermata \bar "||" %5
+    \clef treble \tempoEtIrascetur << {
+      r8 g'' a h c4. h16 c \noBreak
+      a8 a h c d4. c16 d
+      h8
+    } \\ {
+      r2 r8 c, d e
+      f4. e16 f d8 d e f
+      g
+    } >> \clef "treble_8" g,[ a h] c \clef bass c,[ d e]
+    f4. e16 f d8 d e f
+    g4. f16 g e8 e e e %10
+    a a a a f f f f
+    f f f f g g c, c \noBreak
+    g' g c c g4 g,\fermata \bar "||"
+    \time 3/2 \tempoDesiderium c2 c' c \noBreak
+    a1 a2 %15
+    h1 h2
+    c c, c
+    g' g, r4 g'
+    c2 e, r4 f
+    g2 c, r4 c %20
+    g2 c r4 c-\solo
+    g2 c, r\fermata \bar "|." %22 finis
+  }
+}
+
+PeccatorBassFigures = \figuremode {
+  r1
+  r2 <6>
+  <7>2. <\t>4
+  r2 <6 5>
+  <5>1 %5
+  r
+  r
+  r2 <5>
+  q q
+  r q %10
+  r1
+  <6>4. <[5]>8 r2
+  r \bo <[6] 4>4 \bc <[5] 3>
+  r1.
+  <6> %15
+  <6 5>
+  \bo <[4]>2 \bc <[3]>1
+  r1.
+  r2 <6>2. <[7]>4
+  r1. %20
+  r
+  r %22 finis
+}
