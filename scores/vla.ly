@@ -1,20 +1,32 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
-#(define option-instrument-name "vl 1")
+#(define option-instrument-name "vla")
 \include "score_settings/one-staff.ly"
 
 \book {
   \bookpart {
     \section "1" "Beatus vir"
     \addTocEntry
-    \paper { indent = 2\cm }
+    \paper {
+      systems-per-page = #3
+      indent = 2\cm
+    }
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \BeatusViolinoI
+          \set Staff.instrumentName = "Viola"
+          \BeatusViola
         }
+      >>
+    }
+  }
+  \bookpart {
+    \section "2" "Gloria et divitiæ"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \GloriaEtViola }
       >>
     }
   }
@@ -24,16 +36,7 @@
     \paper { systems-per-page = #2 }
     \score {
       <<
-        \new Staff { \ExortumViolinoI }
-      >>
-    }
-  }
-  \bookpart {
-    \section "4" "Iucundus homo"
-    \addTocEntry
-    \score {
-      <<
-        \new Staff { \IucundusViolinoIeII }
+        \new Staff { \ExortumViola }
       >>
     }
   }
@@ -43,16 +46,17 @@
     \paper { systems-per-page = #3 }
     \score {
       <<
-        \new Staff { \ParatumViolinoI }
+        \new Staff { \ParatumViola }
       >>
     }
   }
   \bookpart {
     \section "6" "Dispersit dedit"
     \addTocEntry
+    \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \DispersitViolinoI }
+        \new Staff { \DispersitViola }
       >>
     }
   }
@@ -62,17 +66,26 @@
     \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \PeccatorViolinoI }
+        \new Staff { \PeccatorViola }
+      >>
+    }
+  }
+  \bookpart {
+    \section "8" "Gloria Patri"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \GloriaPatriViola }
       >>
     }
   }
   \bookpart {
     \section "9" "Amen"
     \addTocEntry
-    \paper { systems-per-page = #6 }
+    \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \AmenViolinoI }
+        \new Staff { \AmenViola }
       >>
     }
   }

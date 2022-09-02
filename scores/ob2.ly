@@ -1,7 +1,7 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
-#(define option-instrument-name "vl 1")
+#(define option-instrument-name "ob 2")
 \include "score_settings/one-staff.ly"
 
 \book {
@@ -12,8 +12,8 @@
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \BeatusViolinoI
+          \set Staff.instrumentName = "Oboe II"
+          \BeatusOboeII
         }
       >>
     }
@@ -24,7 +24,7 @@
     \paper { systems-per-page = #2 }
     \score {
       <<
-        \new Staff { \ExortumViolinoI }
+        \new Staff { \ExortumOboeII }
       >>
     }
   }
@@ -33,7 +33,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \IucundusViolinoIeII }
+        \new Staff { \IucundusOboeIeII }
       >>
     }
   }
@@ -43,16 +43,17 @@
     \paper { systems-per-page = #3 }
     \score {
       <<
-        \new Staff { \ParatumViolinoI }
+        \new Staff { \ParatumOboeII }
       >>
     }
   }
   \bookpart {
     \section "6" "Dispersit dedit"
     \addTocEntry
+    \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \DispersitViolinoI }
+        \new Staff { \DispersitOboeII }
       >>
     }
   }
@@ -62,7 +63,7 @@
     \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \PeccatorViolinoI }
+        \new Staff { \PeccatorOboeII }
       >>
     }
   }
@@ -72,7 +73,7 @@
     \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \AmenViolinoI }
+        \new Staff { \AmenOboeII }
       >>
     }
   }
